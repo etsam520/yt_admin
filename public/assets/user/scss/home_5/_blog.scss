@@ -1,0 +1,122 @@
+ .ed-blog5-sec {
+	overflow: hidden;
+	.ed-blog5-shape {
+		right: 0;
+		top: 90px;
+		@media #{$md,$sm,$xs} {
+			display: none;
+		}
+	}
+	.ed-sec-title-5 {
+		max-width: 650px;
+	}
+}
+.ed-blog5-item {
+	margin-bottom: 30px;
+	.item-img {
+		background-color: #2F584F1F;
+		border-bottom-left-radius: 12px;
+		border-bottom-right-radius: 12px;
+		border-bottom: 2px solid #2F584F3D;
+		transition: all 500ms ease-in-out;
+		.inner-img {
+			overflow: hidden;
+			border-bottom-left-radius: 12px;
+			border-bottom-right-radius: 12px;
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				transition: 1000ms cubic-bezier(.73,1.29,.26,-0.33);
+			}
+		}
+		.item-meta {
+			top: 20px;
+			left: 20px;
+			width: 80px;
+			height: 80px;
+			position: absolute;
+			background-color: #fff;
+			border-bottom-left-radius: 6px;
+			border-bottom-right-radius: 6px;
+			.ed-date {
+				width: 100%;
+				height: 51px;
+				display: flex;
+				line-height: 1;
+				font-size: 32px;
+				font-weight: 800;
+				align-items: center;
+				justify-content: center;
+				background-color: #C3F498;
+				color: var(--ed-tt-color-2);
+				border-bottom-left-radius: 6px;
+				border-bottom-right-radius: 6px;
+				border-bottom: 2px solid #87C74F;
+			}
+			.ed-month {
+				color: #050505;
+				font-size: 14px;
+				padding: 5px 8px;
+				font-weight: 600;
+			}
+		}
+		.item-cate {
+			padding: 16px 22px 12px;
+			a {
+				color: #050505;
+				font-size: 16px;
+				font-weight: 500;
+				margin-right: 16px;
+				position: relative;
+				font-family: var(--ed-heading-2);
+				&:before {
+					top: 0;
+					right: -13px;
+					content: '/';
+					position: absolute;
+				}
+				&:last-child {
+					margin-right: 0;
+					&:before {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+	.item-text {
+		margin-top: 24px;
+		.blog_title {
+			max-width: 90%;
+			font-size: 24px;
+			font-weight: 600;
+			padding-bottom: 18px;
+			border-bottom: 1px solid #515151;
+		}
+	}
+	&:hover {
+		.item-img { 
+			background-color: #2F584F;
+			.item-cate {
+				a {
+					color: #fff;
+				}
+			}
+			.inner-img {
+				img {
+					transform: scale(1.1);
+				}
+			}
+		}
+	}
+}
+.ed-blg5-more {
+	.ed-blg5-shape {
+		left: 0;
+		top: -10px;
+		z-index: -1;
+		height: 100%;
+		position: absolute;
+	}
+}

@@ -1,0 +1,124 @@
+@keyframes swing {
+	20% { transform: rotate(15deg); }	
+	40% { transform: rotate(-10deg); }
+	60% { transform: rotate(5deg); }	
+	80% { transform: rotate(-5deg); }	
+	100% { transform: rotate(0deg); }
+}
+.ed-ft6-item {
+	padding: 40px 40px 35px;
+	border: 1px solid #05050533;
+	@media #{$lg,$md,$sm,$xs} {
+		padding: 40px 20px 35px;
+	}
+	@media #{$md,$sm,$xs} {
+		margin-bottom: 15px;
+		padding: 40px 30px 35px;
+	}
+	.item-icon {
+		position: relative;
+		padding-left: 36px;
+		margin-bottom: 28px;
+		padding-bottom: 35px;
+		border-bottom: 1px solid #D9D9D9;
+		&:before,
+		&:after {
+			left: 0;
+			width: 22px;
+			content: '';
+			height: 22px;
+			position: absolute;
+			transition: all 300ms ease-in-out;
+		}
+		&:before {
+			left: 15px;
+			bottom: 14px;
+			background-color: rgba(142, 86, 255, .4);
+		}
+		&:after {
+			left: 0;
+			bottom: 0;
+			width: 14px;
+			height: 14px;
+			background-color: rgba(142, 86, 255, .16);
+		}
+		.inner-icon {
+			width: 68px;
+			height: 68px;
+			background-color: #8E56FF;
+		}
+	}
+	.item-text {
+		h3 {
+			font-size: 24px;
+			font-weight: 500;
+			padding-bottom: 18px;
+			color: var(--ed-tt-color-2);
+		}
+		p {
+			color: #515151;
+		}
+	}
+	&:hover {
+		.item-icon {
+			&:after {
+				left: 22px;
+			}
+			&:before {
+				left: 0;
+			}
+			.inner-icon {
+				animation: swing 2s ease infinite;
+			}
+		}
+	}
+}
+.ed-ft6-content {
+	@media #{$md,$sm,$xs} {
+		overflow: hidden;
+	}
+	.col-lg-4 {
+		&:nth-child(1) {
+			.ed-ft6-item {
+				transform: translateY(-80px);
+				@media #{$md,$sm,$xs} {
+					transform: translateY(0px);
+				}
+			}
+		}
+		&:nth-child(2) {
+			.ed-ft6-item {
+				.item-icon {
+					&:before {
+						background-color: rgba(248, 148, 31, .4);
+					}
+					&:after {
+						background-color: rgba(248, 148, 31, .16);
+					}
+					.inner-icon {
+						background-color: #F8941F;
+					}
+				}
+			}
+		}
+		&:nth-child(3) {
+			.ed-ft6-item {
+				transform: translateY(80px);
+				@media #{$md,$sm,$xs} {
+					transform: translateY(0px);
+				}
+				.item-icon {
+					&:before {
+						background-color: rgba(26, 182, 157, .4);
+					}
+					&:after {
+						background-color: rgba(26, 182, 157, .16);
+					}
+					.inner-icon {
+						background-color: #1AB69D;
+					}
+				}
+			}
+		}
+	}
+}

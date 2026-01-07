@@ -1,0 +1,350 @@
+.ed-hero-section-1 {
+	z-index: 1;
+	overflow: hidden;
+	background-color: #f3f2ff;
+	.ed-h-shape1 {
+		top: -65%;
+		left: -15%;
+		z-index: -1;
+	}
+	.ed-h-shape2 {
+		right: -25%;
+		z-index: -1;
+		bottom: -35%;
+	}
+	.ed-h-shape3 {
+		top: -10%;
+		right: -18%;
+	}
+}
+.ed-h1-content {
+	padding-top: 325px;
+	padding-bottom: 240px;
+	@media #{$md,$sm} {
+		padding-top: 250px;
+		padding-bottom: 170px;
+	}
+	@media #{$xs} {
+		padding-top: 170px;
+		padding-bottom: 80px;
+	}
+}
+.h1-text-wrap {
+	z-index: 1;
+	position: relative;
+	@media #{$lg,$md,$sm,$xs} {
+		margin: 0 auto;
+		max-width: 630px;
+	}
+	.h1-text-area {
+		max-width: 700px;
+		@media #{$xl} {
+			max-width: 500px;
+		}
+		.h1_slug {
+			font-size: 20px;
+			font-weight: 700;
+			color: var(--ed-tt-color);
+		}
+		.hero_title_1 {
+			line-height: 1;
+			font-size: 100px;
+			font-weight: 800;
+			padding-top: 8px;
+			letter-spacing: -1px;
+			padding-bottom: 30px;
+			color: var(--ed-tt-color);
+			@media #{$xl,$lg,$md,$sm,$xs} {
+				font-size: 70px;
+			}
+			@media #{$xxs} {
+				font-size: 50px;
+				padding-bottom: 15px;
+			}
+			@media #{$xxxs} {
+				font-size: 40px;
+				padding-bottom: 15px;
+			}
+		}
+		p {
+			max-width: 590px;
+		}
+	}
+	.h1-search-box {
+		width: 100%;
+		height: 115px;
+		margin-top: 50px;
+		max-width: 940px;
+		border-radius: 100px;
+		background-color: #f9f9f9;
+		border: 3px solid #00f7cf;
+		padding: 0px 30px 0px 40px;
+		box-shadow: 0 4px 0 0 var(--ed-tt-color);
+		@media #{$lg,$md,$sm,$xs} {
+			height: auto;
+		}
+		@media #{$xxs} {
+			border-radius: 0;
+		}
+		&:before {
+			top: 0;
+			right: 0;
+			width: 48%;
+			content: '';
+			height: 100%;
+			position: absolute;
+			border-top-right-radius: 100px;
+			border-bottom-right-radius: 100px;
+			background: var(--ed-gradient);
+			@media #{$lg,$md,$sm,$xs} {
+				display: none;
+			}
+		}
+		form {
+			width: 100%;
+			height: 100%;
+			display: flex;
+			position: relative;
+			align-items: center;
+			justify-content: space-between;
+			@media #{$lg,$md,$sm,$xs} {
+				flex-wrap: wrap;
+				padding: 30px 0px;
+			}
+			.h1-input-field {
+				position: relative;
+				&:before {
+					top: 50%;
+					left: 0;
+					font-weight: 800;
+					content: '\f002';
+					position: absolute;
+					transform: translateY(-50%);
+					font-family: 'Font Awesome 5 Free';
+					@media #{$lg,$md,$sm,$xs} {
+						top: 38%;
+						left: 2px;
+					}
+				}
+			}
+			input {
+				border: none;
+				font-weight: 800;
+				padding-left: 30px;
+				color: var(--ed-tt-color);
+				background-color: transparent;
+				@media #{$lg,$md,$sm,$xs} {
+					width: 100%;
+					padding-bottom: 20px;
+				}
+				&::placeholder {
+					font-size: 15px;
+					font-weight: 800;
+					color: var(--ed-tt-color);
+				}
+			}
+		}
+		.ed-select-option {
+			gap: 10px 50px;
+			@media #{$lg,$md,$sm,$xs} {
+				width: 100%;
+				flex-wrap: wrap;
+				justify-content: start;
+			}
+			.nice-select {
+				height: 48px;
+				border: none;
+				height: auto;
+				font-size: 17px;
+				font-weight: 900;
+				position: relative;
+				line-height: auto;
+				border-radius: 100px;
+				color: var(--ed-tt-color);
+				background-color: transparent;
+				&:after {
+					top: 1px;
+					right: 15px;
+					margin-top: 0;
+					border: none;
+					font-size: 15px;
+					font-weight: 900;
+					content: '\f078';
+					transform: rotate(0);
+					font-family: 'Font Awesome 5 Free';
+					@media #{$xl,$lg,$md,$sm,$xs} {
+						right: 20px;
+					}
+					@media #{$lg,$md,$sm,$xs} {
+						font-size: 14px;
+					}
+				}
+			}
+		}
+		button {
+			font-size: 16px;
+			font-weight: 800;
+			padding: 14px 30px;
+			border-radius: 100px;
+			background-color: transparent;
+			border: 3px solid var(--ed-tt-color);
+			box-shadow: 0 4px 0 0 var(--ed-tt-color);
+			transition: all 500ms ease-in-out;
+			&:hover {
+				box-shadow: 0 -4px 0 0 var(--ed-tt-color);
+			}
+		}
+	}
+}
+@keyframes icon-bounce {
+	0%, 100%, 20%, 50%, 80% {
+		-webkit-transform: translateY(0);
+		-ms-transform: translateY(0);
+		transform: translateY(0);
+	}
+	40% {
+		-webkit-transform: translateY(-10px);
+		-ms-transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+	60% {
+		-webkit-transform: translateY(-5px);
+		-ms-transform: translateY(-5px);
+		transform: translateY(-5px);
+	}
+}
+@keyframes icon-bounce2 {
+	0%, 100%, 20%, 50%, 80% {
+		-webkit-transform: scale(.8);
+		-ms-transform: scale(.8);
+		transform: scale(.8);
+	}
+	40% {
+		-webkit-transform: scale(.5);
+		-ms-transform: scale(.5);
+		transform: scale(.5);
+	}
+	60% {
+		-webkit-transform: scale(1);
+		-ms-transform: scale(1);
+		transform: scale(1);
+	}
+}
+@keyframes spin {
+	from {
+		transform:rotate(0deg);
+	}
+	to {
+		transform:rotate(360deg);
+	}
+}
+@keyframes ringer {
+    0% {
+        transform: rotate(0)scale(1)skew(1deg)
+    }
+
+    10% {
+        transform: rotate(-10deg)scale(1)skew(1deg)
+    }
+
+    20% {
+        transform: rotate(20deg)scale(1)skew(1deg)
+    }
+
+    30% {
+        transform: rotate(-10deg)scale(1)skew(1deg)
+    }
+
+    40% {
+        transform: rotate(20deg)scale(1)skew(1deg)
+    }
+
+    100%,50% {
+        transform: rotate(0)scale(1)skew(1deg)
+    }
+}
+.h1-img-wrap {
+	right: 0;
+	z-index: 1;
+	bottom: 120px;
+	max-width: 600px;
+	position: absolute;
+	@media #{$lg,$md,$sm,$xs} {
+		bottom: 0;
+		margin: 0 auto;
+		position: relative;
+		margin-bottom: 40px;
+	}
+	.ed-img-shape1 {
+		top: -20px;
+		left: -80px;
+		z-index: 1;
+		span {
+			animation: icon-bounce 2s ease-out infinite;
+		}
+		@media #{$xs} {
+			display: none;
+		}
+	}
+	.ed-img-shape2 {
+		top: 40%;
+		right: -80px;
+		z-index: 1;
+		transform: translateY(-50%);
+		span {
+			animation: icon-bounce 3s ease-out infinite;
+		}
+		@media #{$xs} {
+			display: none;
+		}
+	}
+	.ed-img-shape3 {
+		right: 10px;
+		bottom: 20px;
+		z-index: 1;
+		span {
+			animation: icon-bounce2 3s ease-out infinite;
+		}
+		@media #{$xs} {
+			display: none;
+		}
+	}
+	.ed-img-shape4 {
+		top: 45%;
+		left: -22px;
+		z-index: 1;
+		transform: translateY(-50%);
+		span {
+			animation: ringer 3s ease-out infinite;
+		}
+		@media #{$xs} {
+			display: none;
+		}
+	}
+	.ed-img-shape5 {
+		left: -28px;
+		bottom: 5px;
+		z-index: 1;
+		span {
+			animation: spin 5s ease-out infinite;
+		}
+		@media #{$xs} {
+			display: none;
+		}
+	}
+	.item-img {
+		z-index: -1;
+		overflow: hidden;
+		max-width: 600px;
+		max-height: 710px;
+		border-bottom-right-radius: 300px;
+		@media #{$xs} {
+			border-bottom-right-radius: 100px;
+		}
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+}

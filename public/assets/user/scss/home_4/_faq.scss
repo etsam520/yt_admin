@@ -1,0 +1,92 @@
+.ed-faq4-content {
+	.ed-faq-accordion .accordion-button span {
+		width: 100%;
+		font-size: 22px;
+		margin-left: 30px;
+		@media #{$md,$sm,$xs} {
+			margin-left: 0;
+		}
+		@media #{$xs} {
+			font-size: 18px;
+		}
+	}
+	.ed-faq-accordion .accordion-body {
+		padding-left: 0;
+	}
+	.ed-faq-accordion .accordion-button .item-head {
+		max-width: 85%;
+		img {
+			width: 68px;
+			height: 68px;
+			@media #{$md,$sm,$xs} {
+				display: none;
+			}
+		}
+		@media #{$xs} {
+			max-width: 100%;
+		}
+	}
+	.ed-faq-accordion .accordion-item {
+		border: none;
+		margin-bottom: 15px;
+		border-radius: 60px;
+		padding: 30px 50px 20px;
+		background-color: #ffeaea;
+		&:nth-child(2) {
+			background-color: #8383ff;
+		}
+		&:nth-child(3) {
+			background-color: #ff7b5a;
+		}
+		&:nth-child(4) {
+			background-color: #ffc698;
+		}
+		@media #{$xs} {
+			border-radius: 15px;
+			padding: 30px 15px 20px;
+		}
+	}
+	.ed-faq-accordion .accordion-body p {
+		font-size: 18px;
+		max-width: 740px;
+		color: var(--ed-black-color);
+	}
+	.ed-faq-accordion .accordion-button::after {
+		top: 10px;
+		width: 45px;
+		height: 45px;
+		display: flex;
+		font-size: 16px;
+		content: '\f063';
+		font-weight: 900;
+		border-radius: 100%;
+		align-items: center;
+		background-image: none;
+		justify-content: center;
+		background-color: #dadada;
+		font-family: 'Font Awesome 5 Free';
+		@media #{$md,$sm,$xs} {
+			top: 0;
+		}
+		@media #{$xs} {
+			width: 20px;
+			height: 20px;
+			background-color: transparent;
+		}
+	}
+}
+.ed-client4-sec {
+	overflow: hidden;
+	p {
+		font-size: 20px;
+		font-weight: 600;
+		padding-bottom: 35px;
+		color: var(--ed-black-color);
+	}
+}
+.ed-client-marquee {
+	.item-client {
+		margin: 0px 25px;
+		display: inline-block;
+	}
+}

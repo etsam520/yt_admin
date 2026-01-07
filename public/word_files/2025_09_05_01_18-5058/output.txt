@@ -1,0 +1,33 @@
+  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Question : 7                        
+  ----------------------------------- -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Question English                    Which shortcut quickly opens Task Manager in Windows? $$(1 + x)^{n} = 1 + \frac{nx}{1!} + \frac{n(n - 1)x^{2}}{2!} + \ldots$$
+
+  Question Hindi                      Windows में Task Manager को जल्दी खोलने के लिए कौन सा shortcut है?
+
+  Type                                multiple_choice
+
+  Option English                      Ctrl + Alt + Delete
+
+  Option English                      Ctrl + Shift + T
+
+  Option English                      Alt + F4
+
+  Option English                      Win + R
+
+  Option Hindi                        Ctrl + Alt + Delete
+
+  Option Hindi                        Ctrl + Shift + T
+
+  Option Hindi                        Alt + F4
+
+  Option Hindi                        Win + R
+
+  Correct Answer                      A
+
+  Solution English                    Ctrl + Alt + Delete opens options like Task Manager and Lock Screen. For direct Task Manager, Ctrl + Shift + Esc can also be used.
+
+  Solution Hindi                      $$\frac{- b \pm \sqrt{b^{2} - 4ac}}{2a}$$Ctrl + Alt + Delete से Task Manager, Lock Screen आदि options खुलते हैं। Directly Task Manager के लिए Ctrl + Shift + Esc भी use कर सकते हैं।
+
+  Specialization                      ISRO, DRDO, HAL & Other PSU Companies
+  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

@@ -1,0 +1,137 @@
+.ed-about-section-3 {
+	z-index: 1;
+	overflow: hidden;
+	.ed-ab-sec-sh {
+		top: 0;
+		left: 0;
+		z-index: -1;
+		@media #{$lg,$md,$sm,$xs} {
+			display: none;
+		}
+	}
+	.ed-ab-sec-sh2 {
+		right: 0;
+		bottom: 0;
+		z-index: -1;
+		@media #{$lg,$md,$sm,$xs} {
+			display: none;
+		}
+	}
+}
+.ed-about-content-3 {
+	gap: 50px 40px;
+	@media #{$lg,$md,$sm,$xs} {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+}
+.ed-about-img-wrap-3 {
+	width: 100%;
+	max-width: 680px;
+	padding-left: 80px;
+	@media #{$xs} {
+		padding-left: 0;
+	}
+	.ab-shape1 {
+		right: 0;
+		bottom: 0;
+		@media #{$xs} {
+			display: none;
+		}
+	}
+	.ab-shape2 {
+		bottom: -20px;
+		right: 32%;
+		@media #{$xs} {
+			display: none;
+		}
+	}
+	.ab-shape3 {
+		right: 55%;
+		bottom: -17px;
+		animation: roteshape 6s var(--cube-1) infinite;
+		@media #{$xs} {
+			display: none;
+		}
+	}
+	.ab-shape4 {
+		right: 50%;
+		bottom: 0px;
+		animation: roteshape 4s var(--cube-1) infinite;
+		@media #{$xs} {
+			display: none;
+		}
+	}
+	&:before {
+		top: 0;
+		left: 45px;
+		content: '';
+		height: 703px;
+		width: 512px;
+		position: absolute;
+		border-radius: 100%;
+		border-radius: 400px;
+		border: 2px solid #5c99a7;
+		@media #{$xs} {
+			display: none;
+		}
+	}
+	.item-img {
+		max-width: 518px;
+		overflow: hidden;
+		border-radius: 400px;
+	}
+	.inner-text {
+		right: 0;
+		z-index: 1;
+		top: 0px;
+		width: 180px;
+		height: 180px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		.txt-bg {
+			top: 0;
+			left: 0;
+			z-index: -1;
+			position: absolute;
+		}
+		span {
+			font-size: 25px;
+			line-height: 1.1;
+			font-weight: 700;
+			padding-left: 25px;
+			padding-bottom: 20px;
+			color: var(--ed-black-color);
+		}
+	}
+}
+.ed-about-text-wrap-3 {
+	width: 100%;
+	max-width: 670px;
+}
+.ed-ab-ft-3 {
+	gap: 15px 20px;
+	margin-bottom: 28px;
+	.item-icon {
+		width: 80px;
+		height: 80px;
+		border-radius: 100%;
+		transition: all 500ms ease-in-out;
+		border: 2px solid var(--ed-black-color);
+	}
+	.item-text {
+		h3 {
+			font-size: 22px;
+			max-width: 130px;
+			font-weight: 600;
+			color: var(--ed-black-color);
+		}
+	}
+	&:hover {
+		.item-icon {
+			transform: scale(-1) rotate(180deg);
+		}
+
+	}
+}

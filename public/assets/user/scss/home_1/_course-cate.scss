@@ -1,0 +1,44 @@
+.ed-course-cate-content {
+	z-index: 2;
+	margin-top: -50px;
+	position: relative;
+	border-radius: 20px;
+	background-color: #fff;
+	padding: 45px 45px 15px;
+	@media #{$xs} {
+		margin-top: 30px;
+		padding: 15px 15px 15px;
+	}
+}
+.ed-coc-item {
+	padding: 50px 15px;
+	margin-bottom: 30px;
+	border-radius: 20px;
+	background-color: #f7f7ff;
+	.item-img {
+		width: 95px;
+		height: 95px;
+		margin: 0 auto;
+		margin-bottom: 28px;
+		transition: all 500ms ease-in-out;
+	}
+	.item-text {
+		h3 {
+			font-size: 25px;
+			font-weight: 800;
+			padding-bottom: 2px;
+			color: var(--ed-tt-color);
+		}
+	}
+	&:hover {
+		.item-img {
+			transform: scale(-1) rotate(180deg);
+			&:before {
+				left: 0;
+				right: 0;
+				opacity: 0;
+				transition: all 400ms linear;
+			}
+		}
+	}
+}

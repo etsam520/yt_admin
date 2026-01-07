@@ -1,0 +1,115 @@
+.ed-price-section {
+	overflow: hidden;
+	.ed-sec-title {
+		margin: 0 auto;
+		max-width: 750px;
+	}
+}
+.ed-price-item { 
+	margin-bottom: 30px;
+	border-radius: 30px;
+	padding: 60px 60px 0px;
+	border: 3px solid var(--ed-tt-color);
+	box-shadow: 0 5px 0 0 var(--ed-tt-color);
+	@media #{$xs} {
+		padding: 60px 30px 0px;
+	}
+	.item-top {
+		gap: 20px;
+		display: flex;
+		align-items: center;
+		.item-icon {
+			width: 85px;
+			height: 75px;
+		}
+		.item-text {
+			text-align: left;
+			h3 {
+				line-height: 1;
+				font-size: 33px;
+				font-weight: 800;
+				padding-bottom: 4px;
+				color: var(--ed-tt-color);
+				@media #{$xs} {
+					font-size: 28px;
+				}
+			}
+			span {
+				font-weight: 600;
+			}
+		}
+	}
+	.item-desc {
+		margin-top: 35px;
+		margin-bottom: 20px;
+	}
+	.item-btn {
+		margin-bottom: 35px;
+		a {
+			width: 100%;
+			font-size: 22px;
+			font-weight: 900;
+			padding: 10px 15px;
+			border-radius: 100px;
+			background-color: #fff;
+			color: var(--ed-tt-coloe);
+			border: 3px solid var(--ed-tt-color);
+			box-shadow: 0 4px 0 0 var(--ed-tt-color);
+			span {
+				display: inline-block;
+				pointer-events: none;
+				&.ed-spin {
+					-webkit-animation: ed-spin .5s 1;
+					-khtml-animation: ed-spin .5s 1;
+					-moz-animation: ed-spin .5s 1;
+					-ms-animation: ed-spin .5s 1;
+					-o-animation: ed-spin .5s 1;
+					animation: ed-spin .5s 1;
+					-webkit-transform-origin: bottom;
+					transform-origin: bottom
+				}
+			}
+			&:hover {
+				box-shadow: 0 -4px 0 0 var(--ed-tt-color);
+			}
+		}
+	}
+	.item-list {
+		li {
+			font-size: 18px;
+			font-weight: 800;
+			margin-bottom: 16px;
+			color: var(--ed-tt-color);
+			i {
+				margin-right: 4px;
+			}
+		}
+	}
+	.price-slug {
+		margin-bottom: -14px;
+		span {
+			color: #fff;
+			font-size: 13px;
+			font-weight: 600;
+			padding: 3px 35px;
+			border-radius: 20px;
+			background-color: #0d161a;
+		}
+	}
+	&.highlight-item {
+		border: none;
+		padding-bottom: 25px;
+		background: var(--ed-gradient);
+		.item-desc {
+			margin-bottom: 30px;
+			padding-bottom: 30px;
+			border-bottom: 2px solid var(--ed-tt-color);
+		}
+		.item-btn {
+			margin-bottom: 25px;
+		}
+		.price-slug {
+			margin-bottom: 0;
+		}
+	}
+}

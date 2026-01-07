@@ -1,0 +1,147 @@
+.ed-review-count-sec {
+	.container {
+		max-width: 1400px;
+	}
+}
+.ed-review-count-content {
+	display: flex;
+	gap: 30px 45px;
+	@media #{$lg,$md,$sm,$xs} {
+		gap: 30px 25px;
+	}
+	@media #{$md,$sm,$xs} {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+}
+.ed-review-count-img-wrap {
+	gap: 10px;
+	overflow: hidden;
+	max-width: 720px;
+	@media #{$xxs} {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.item-img {
+		overflow: hidden;
+		border-radius: 300px;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+}
+.ed-rv-item-count {
+	left: 0;
+	right: 0;
+	top: 50%;
+	z-index: 2;
+	width: 205px;
+	padding: 30px;
+	height: 165px;
+	margin: 0 auto;
+	position: absolute;
+	border-radius: 30px;
+	transform: translateY(-50%);
+	background-color: var(--ed-yellow-color);
+	border: 1px solid var(--ed-black-color);
+	@media #{$xxs} {
+		position: static;
+		transform: translateY(0);
+	}
+	.count-star {
+		gap: 8px;
+		height: 30px;
+		display: flex;
+		margin: 0 auto;
+		max-width: 138px;
+		border-radius: 30px;
+		align-items: center;
+		background-color: #fff;
+		justify-content: center;
+		ul {
+			gap: 1px;
+			display: flex;
+		}
+		li {
+			color: #f69900;
+			font-size: 12px;
+			line-height: 1;
+		}
+		span {
+			top: 2px;
+			line-height: 1;
+			font-size: 12px;
+			font-weight: 800;
+			position: relative;
+			color: var(--ed-black-color);
+		}
+	}
+	p {
+		padding-top: 8px;
+		padding-bottom: 5px;
+		color: var(--ed-black-color);
+		font-size: 14px;
+		font-weight: 600;
+	}
+	h3 {
+		line-height: 1;
+		font-size: 45px;
+		font-weight: 800;
+		color: var(--ed-black-color);
+	}
+	&:is(.rel-item) {
+		margin: 0;
+		position: static;
+		transform: translateY(0);
+		&:nth-child(1) {
+			background-color: var(--ed-purple-color);
+			.count-star {
+				height: 35px;
+				font-size: 16px;
+				border: 1px solid var(--ed-tt-color);
+				background-color: var(--ed-yellow-color);
+			}
+			p {
+				font-size: 16px;
+				padding-bottom: 0;
+			}
+		}
+		&:nth-child(2) {
+			background-color: #fff;
+			.count-star {
+				height: 35px;
+				font-size: 16px;
+				border: 1px solid var(--ed-tt-color);
+				background-color: var(--ed-purple-color);
+			}
+		}
+	}
+}
+.ed-review-count-text-wrap {
+	max-width: 635px;
+	@media #{$lg} {
+		max-width: 480px;
+	}
+	.ed-sec-title-2 {
+		.sec_title {
+			font-size: 50px;
+			@media #{$lg,$md} {
+				font-size: 40px;
+			}
+			@media #{$xs} {
+				font-size: 36px;
+			}
+			@media #{$xxs} {
+				font-size: 32px;
+			}
+		}
+	}
+}
+.ed-rv-item-count-wrap {
+	gap: 20px;
+	@media #{$xxs} {
+		flex-wrap: wrap;
+	}
+}

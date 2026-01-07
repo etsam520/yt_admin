@@ -1,0 +1,48 @@
+.ed-sponsor5-sec {
+	margin: 0px 32px;
+	overflow: hidden;
+	@media #{$xs} {
+		margin: 0px;
+	}
+}
+.ed-sponsor5-title {
+	gap: 20px;
+	@media #{$xs} {
+		gap: 5px;
+	}
+	p {
+		color: #2F584F;
+		font-size: 24px;
+		font-weight: 600;
+		white-space: nowrap;
+		@media #{$xs} {
+			font-size: 20px;
+		}
+		@media #{$xxs} {
+			font-size: 16px;
+		}
+	}
+	.line_1,
+	.line_2  {
+		width: 18%;
+		height: 1px;
+		background-color: rgba(47, 88, 79, .40);
+	}
+	.line_2 {
+		width: 80%;
+	}
+}
+.ed-sponsor5-marquee {
+	padding: 30px 0px;
+	display: flow-root;
+	.ed-sp5-img {
+		margin: 0px 55px;
+		display: inline-block;
+		.item-img {
+			height: 68px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	}
+}

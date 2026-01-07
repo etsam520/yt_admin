@@ -1,0 +1,41 @@
+.ed-gallery-feed {
+	.grid-sizer {
+		width: 25%;
+	}
+	.grid-sizer,
+	.grid-item {
+		float: left;
+		overflow: hidden;
+		position: relative;
+		display: inline-block;
+	}
+	.grid-item {
+		padding: 10px;
+	}
+	.item-img-icon {
+		overflow: hidden;
+		border-radius: 10px;
+	}
+	.grid-sizer img,
+	.grid-item img {
+		width: 100%;
+	}
+	.grid-size-25 {
+		width: 25%;
+		@media #{$sm,$xs} {
+			width: 100%;
+		}
+	}
+	.grid-size-50 {
+		width: 50%;
+		@media #{$sm,$xs} {
+			width: 100%;
+		}
+	}
+	.grid-size-75 {
+		width: 75%;
+		@media #{$sm,$xs} {
+			width: 100%;
+		}
+	}
+}

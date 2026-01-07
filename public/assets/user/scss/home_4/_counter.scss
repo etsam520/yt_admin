@@ -1,0 +1,143 @@
+.ed-counter-sec-4 {
+	z-index: 1;
+	overflow: hidden;
+	background-color: var(--ed-black-color);
+	.ed-counter-bg {
+		bottom: 0;
+		left: 0;
+		z-index: -1;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+}
+.ed-counter4-text {
+	gap: 20px 30px;
+	@media #{$lg,$md,$sm,$xs} {
+		flex-wrap: wrap;
+	}
+	.ed-sec-title-4 {
+		max-width: 640px;
+		.sec_title,p {
+			color: #fff;
+		}
+		p {
+			max-width: 580px;
+		}
+	}	
+	li {
+		color: #fff;
+		font-size: 23px;
+		font-weight: 700;
+		margin-bottom: 30px;
+		@media #{$xxs} {
+			font-size: 20px;
+		}
+		i {
+			margin-right: 10px;
+			color: var(--ed-prime-c6);
+		}
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+.ed-counter4-content {
+	gap: 20px 35px;
+	padding-top: 95px;
+	@media #{$xl,$lg,$md,$sm} {
+		gap: 20px 20px;
+	}
+	@media #{$lg,$md,$sm,$xs} {
+		flex-wrap: wrap;
+	}
+}
+.ed-counter4-wrap {
+	gap: 20px 35px;
+	@media #{$xl,$lg,$md,$sm} {
+		gap: 20px 20px;
+	}
+	@media #{$xs} {
+		width: 100%;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+}
+.ed-item-count-4 {
+	width: 255px;
+	height: 130px;
+	padding-top: 25px;
+	background-color: #232424;
+	@media #{$xl,$lg,$md,$sm,$xs} {
+		width: 220px;
+	}
+	@media #{$xxs} {
+		width: 100%;
+	}
+	h3 {
+		font-size: 40px;
+		font-weight: 700;
+		padding-bottom: 3px;
+		color: var(--ed-prime-c6);
+	}
+	p {
+		color: #fff;
+		font-size: 15px;
+		font-weight: 600;
+	}
+}
+.ed-counter4-author {
+	width: 100%;
+	display: flex;
+	max-width: 530px;
+	padding-top: 35px;
+	padding-right: 45px;
+	justify-content: end;
+	background-color: #232424;
+	@media #{$lg,$md,$sm,$xs} {
+		max-width: 700px;
+		align-items: center;
+	}
+	@media #{$xxs} {
+		gap: 20px 30px;
+		flex-wrap: wrap;
+		padding-right: 0;
+		padding-bottom: 40px;
+		justify-content: center !important;
+	}
+	.item-img {
+		left: 0;
+		bottom: 0;
+		position: absolute;
+		@media #{$lg,$md,$sm,$xs} {
+			position: static;
+		}
+	}
+	.item-text {
+		.item-rate {
+			span {
+				line-height: 1;
+				font-size: 36px;
+				font-weight: 700;
+				margin-right: 10px;
+				color: var(--ed-prime-c6);
+			}
+			li {
+				font-size: 16px;
+				line-height: 1;
+				color: var(--ed-prime-c6);
+			}
+		}
+	}
+	p {
+		color: #fff;
+		font-size: 14px;
+		font-weight: 700;
+		padding-top: 5px;
+	}
+}

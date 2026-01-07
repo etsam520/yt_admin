@@ -1,0 +1,194 @@
+
+/* 
+    search-box-css-start
+*/
+.txa-search {
+    &-box {
+        padding-top: 56px;
+        padding-bottom: 56px;
+        background-color: rgb(255 255 255 / 88%);
+        backdrop-filter: blur(40px);
+        -webkit-backdrop-filter: blur(40px);
+        position: fixed;
+        display: flex;
+        left: 0;
+        top: 0;
+        width: 100%;
+        z-index: 10;
+        align-items: center;
+        transition: 500ms var(--cube-1);
+        transform-origin: top;
+        transform: scaleY(0);
+        visibility: hidden;
+        box-shadow: 0 5px 10px 1px rgb(0 0 0 / 5%);
+    
+        &-close {
+            height: 40px;
+            width: 40px;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            border-radius: 2px;
+            background: #f1f1f1;
+            color: #000;
+            flex: 0 0 auto;
+            transition: all .3s ease-in-out;
+            position: absolute;
+            right: 40px;
+            top: 35px;
+            line-height: 1;
+
+            @media #{$xs} {
+                right: 20px;
+                top: 15px; 
+            }
+
+            i {
+                line-height: 1;
+            }
+    
+            &:hover {
+                background: var(--ed-red-color);
+                background-size: 200%, 1px;
+                color: #fff;
+            }
+        }
+
+        &.active {
+            top: 0;
+            opacity: 1;
+            visibility: visible;
+            transform: scaleY(1);
+
+            .txa-search-form::after {
+                transform: scaleX(1);
+                transition-delay: .3s;
+            }
+        }
+
+    }
+
+    &-container {
+        width: 100%;
+        max-width: 840px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    &-title{
+        font-size: 23px;
+        line-height: 1;
+        font-weight: 700 !important;
+        padding-bottom: 30px;
+        color: var(--ed-black-color);
+    }
+
+    &-form {
+        position: relative;
+        z-index: 1;
+
+        &-input {
+            width: 100%;
+            margin: 0;
+            border: none;
+            outline: none;
+            text-align: center;
+            font-size: 16px;
+            color: #888888;
+            font-weight: 500;
+            padding: 10px 10px;
+            background: transparent;
+
+        }
+
+        &::after {
+            content: "";
+            width: 100%;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            position: absolute;
+            background-color: #6D6D6D;
+            transition: all .5s ease-in-out;
+            transform: scaleX(0);
+            transition-delay: 0s;
+        }
+    }
+
+    &-tag {
+        gap: 8px;
+        justify-content: center;
+
+        &-title {
+            font-size: 16px;
+            font-weight: 700 !important;
+            color: var(--ed-black-color);
+            padding-bottom: 12px;
+        }
+
+        &-item {
+            flex:  0 0 auto;
+            display: inline-block;
+            font-size: 15px;
+            font-weight: 500;
+            color: #454545;
+            border: 1px solid #DFE1E5;
+            line-height: 1;
+            padding: 9px 17px;
+            transition: all .2s ease-in-out;
+
+            &:hover {
+                
+                background: var(--ed-red-color);
+                background-size: 200%, 1px;
+                color: #fff;
+            }
+        }
+    }
+    
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    z-index: 1;
+    display: none;
+
+    &:is(.active) {
+        display: block;
+    }
+}
+
+
+
+
+
+
+.txa-search-box {
+    &:is(.has-home-6) {
+        .txa-search-box-close {
+            &:hover {
+                background: var(--fx-clr-pr-2);
+            }
+        }
+
+        .txa-search-tag-item {
+            &:hover {
+                background: var(--fx-clr-pr-2);
+                border-color: transparent;
+            }
+        }
+    }
+}
+
+/* 
+    search-box-css-end
+*/
+

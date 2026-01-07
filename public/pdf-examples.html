@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Generation Examples</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        h1 {
+            color: #2c5aa0;
+            border-bottom: 3px solid #2c5aa0;
+            padding-bottom: 10px;
+        }
+        .example {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .example h2 {
+            color: #2c5aa0;
+            margin-top: 0;
+        }
+        pre {
+            background: #1e1e1e;
+            color: #d4d4d4;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        .feature-list {
+            list-style: none;
+            padding: 0;
+        }
+        .feature-list li {
+            padding: 5px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+        .feature-list li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #4caf50;
+            font-weight: bold;
+        }
+        .endpoint {
+            background: #e3f2fd;
+            padding: 10px;
+            border-left: 4px solid #2196f3;
+            margin: 10px 0;
+            border-radius: 4px;
+        }
+        .code {
+            font-family: 'Courier New', monospace;
+            background: #f0f0f0;
+            padding: 2px 6px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <h1>📄 Advanced PDF Generation - Usage Examples</h1>
+
+    <div class="example">
+        <h2>🎯 Features</h2>
+        <ul class="feature-list">
+            <li>Magazine-style multi-column layouts (2-4 columns)</li>
+            <li>Intelligent content flow without empty column spaces</li>
+            <li>Mathematical formula rendering (LaTeX/KaTeX/MathJax)</li>
+            <li>Bilingual support (Hindi & English)</li>
+            <li>Multiple professional templates</li>
+            <li>Customizable styling and layout options</li>
+        </ul>
+    </div>
+
+    <div class="example">
+        <h2>Example 1: Magazine Template with Math Formulas</h2>
+        <div class="endpoint">
+            <strong>POST</strong> /api/admin/pdf/generate
+        </div>
+        <pre>{
+  "template": "magazine",
+  "language": "both",
+  "options": {
+    "column_count": 2,
+    "column_gap": "8mm",
+    "render_math": true,
+    "math_engine": "katex",
+    "show_solutions": true,
+    "show_answer_key": false,
+    "font_size": 11,
+    "header_text": "Mathematics Question Paper",
+    "footer_text": "Prepared by EasyWay - 2025"
+  }
+}</pre>
+    </div>
+
+    <div class="example">
+        <h2>Example 2: Three-Column Compact Layout</h2>
+        <div class="endpoint">
+            <strong>POST</strong> /api/admin/pdf/generate
+        </div>
+        <pre>{
+  "template": "magazine",
+  "language": "english",
+  "options": {
+    "column_count": 3,
+    "column_gap": "6mm",
+    "column_rule": "1px solid #ccc",
+    "font_size": 10,
+    "show_solutions": false,
+    "show_answer_key": true,
+    "answers_on_separate_page": true
+  }
+}</pre>
+    </div>
+
+    <div class="example">
+        <h2>Example 3: Math Formula Usage in Questions</h2>
+        <p>Use LaTeX syntax in your question text:</p>
+        
+        <h3>Inline Math:</h3>
+        <pre>The quadratic formula is $x = \frac{-b \pm \sqrt{b^2-4ac}}{2a}$</pre>
+        
+        <h3>Display Math:</h3>
+        <pre>Find the integral:
+$$\int_{0}^{\pi} \sin(x) dx$$</pre>
+
+        <h3>Common Math Symbols:</h3>
+        <pre>Greek letters: $\alpha, \beta, \gamma, \Delta, \Omega$
+Operators: $\pm, \times, \div, \neq, \leq, \geq$
+Calculus: $\int, \sum, \prod, \lim, \partial$
+Sets: $\in, \notin, \subset, \cup, \cap$
+Arrows: $\rightarrow, \Rightarrow, \leftrightarrow$</pre>
+    </div>
+
+    <div class="example">
+        <h2>Example 4: Bilingual with Category Grouping</h2>
+        <div class="endpoint">
+            <strong>POST</strong> /api/admin/pdf/generate
+        </div>
+        <pre>{
+  "template": "magazine",
+  "language": "both",
+  "options": {
+    "column_count": 2,
+    "render_math": true,
+    "group_by_subject": true,
+    "show_category_info": true,
+    "show_ca_date": true,
+    "highlight_correct_answers": false,
+    "font_size": 11,
+    "watermark": "CONFIDENTIAL"
+  }
+}</pre>
+    </div>
+
+    <div class="example">
+        <h2>Example 5: Get Available Templates</h2>
+        <div class="endpoint">
+            <strong>GET</strong> /api/admin/pdf/templates
+        </div>
+        <p>Returns all available templates with their features:</p>
+        <pre>{
+  "success": true,
+  "templates": [
+    {
+      "id": "magazine",
+      "name": "Magazine Template",
+      "description": "Professional multi-column layout...",
+      "features": [
+        "Multi-Column Layout",
+        "Math Formula Support",
+        "Professional Design",
+        "Continuous Flow"
+      ]
+    },
+    ...
+  ],
+  "advanced_options": {
+    "column_count": "Number of columns (1-4)",
+    "render_math": "Enable mathematical formula rendering",
+    ...
+  }
+}</pre>
+    </div>
+
+    <div class="example">
+        <h2>Example 6: Preview Before Generating</h2>
+        <div class="endpoint">
+            <strong>POST</strong> /api/admin/pdf/preview
+        </div>
+        <pre>{
+  "questions": [1, 2, 3, 4, 5],
+  "template": "magazine",
+  "language": "both",
+  "options": {
+    "column_count": 2,
+    "render_math": true,
+    "show_solutions": true
+  }
+}</pre>
+        <p>Returns HTML preview that you can display in browser before generating the final PDF.</p>
+    </div>
+
+    <div class="example">
+        <h2>Configuration Options Reference</h2>
+        <table style="width: 100%; border-collapse: collapse;">
+            <tr style="background: #f0f0f0;">
+                <th style="padding: 10px; text-align: left; border: 1px solid #ddd;">Option</th>
+                <th style="padding: 10px; text-align: left; border: 1px solid #ddd;">Type</th>
+                <th style="padding: 10px; text-align: left; border: 1px solid #ddd;">Description</th>
+            </tr>
+            <tr>
+                <td style="padding: 8px; border: 1px solid #ddd;"><code class="code">column_count</code></td>
+                <td style="padding: 8px; border: 1px solid #ddd;">integer (1-4)</td>
+                <td style="padding: 8px; border: 1px solid #ddd;">Number of columns in magazine layout</td>
+            </tr>
+            <tr>
+                <td style="padding: 8px; border: 1px solid #ddd;"><code class="code">column_gap</code></td>
+                <td style="padding: 8px; border: 1px solid #ddd;">string</td>
+                <td style="padding: 8px; border: 1px solid #ddd;">Gap between columns (e.g., "8mm", "10mm")</td>
+            </tr>
+            <tr>
+                <td style="padding: 8px; border: 1px solid #ddd;"><code class="code">render_math</code></td>
+                <td style="padding: 8px; border: 1px solid #ddd;">boolean</td>
+                <td style="padding: 8px; border: 1px solid #ddd;">Enable mathematical formula rendering</td>
+            </tr>
+            <tr>
+                <td style="padding: 8px; border: 1px solid #ddd;"><code class="code">math_engine</code></td>
+                <td style="padding: 8px; border: 1px solid #ddd;">string</td>
+                <td style="padding: 8px; border: 1px solid #ddd;">"katex" or "mathjax"</td>
+            </tr>
+            <tr>
+                <td style="padding: 8px; border: 1px solid #ddd;"><code class="code">font_size</code></td>
+                <td style="padding: 8px; border: 1px solid #ddd;">integer (8-20)</td>
+                <td style="padding: 8px; border: 1px solid #ddd;">Base font size in pixels</td>
+            </tr>
+            <tr>
+                <td style="padding: 8px; border: 1px solid #ddd;"><code class="code">page_padding</code></td>
+                <td style="padding: 8px; border: 1px solid #ddd;">string</td>
+                <td style="padding: 8px; border: 1px solid #ddd;">Page margins (e.g., "15mm")</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="example">
+        <h2>📚 Next Steps</h2>
+        <ol>
+            <li>Run the setup script: <code class="code">bash setup-pdf-advanced.sh</code></li>
+            <li>Test the endpoints using Postman or your API client</li>
+            <li>Check the generated PDFs in <code class="code">storage/app/public/pdfs/</code></li>
+            <li>Read the full documentation: <code class="code">docs/PDF_ADVANCED_FEATURES.md</code></li>
+        </ol>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,155 @@
+.ed-intro-section {
+	overflow: hidden;	
+	padding-top: 200px;
+	@media #{$xs} {
+		padding-top: 100px;
+	}
+	.container {
+		max-width: 1544px;
+	}
+}
+.ed-intro-content {
+	gap: 30px 50px;
+	display: flex;
+	@media #{$xl} {
+		gap: 30px;
+	}
+	@media #{$lg,$md,$sm,$xs} {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+}
+.ed-intro-img-wrap {
+	z-index: 1;
+	max-width: 793px;
+	.intro-shape1 {
+		top: -15%;
+		left: 13%;
+		z-index: -1;
+		@media #{$xs} {
+			display: none;
+		}
+	}
+	.intro-shape2 {
+		top: 33%;
+		right: 0;
+		z-index: -1;
+		transform: translateY(-50%);
+		@media #{$xs} {
+			display: none;
+		}
+	}
+	.intro-shape3 {
+		top: -12%;
+		left: 55%;
+		z-index: -1;
+		@media #{$xs} {
+			display: none;
+		}
+	}
+	.intro-shape4 {
+		top: -12%;
+		right: 8%;
+		@media #{$xs} {
+			display: none;
+		}
+	}
+	.intro-shape5 {
+		left: 15%;
+		top: 20%;
+		z-index: -1;
+		@media #{$xs} {
+			display: none;
+		}
+	}
+}
+.ed-intro-text-wrap {
+	width: 100%;
+	max-width: 675px;
+	@media #{$xl} {
+		max-width: 50%;
+	}
+	.ed-sec-title-2 {
+		max-width: 615px;
+		p {
+			max-width: 540px;
+		}
+	}
+	.item-img {
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+}
+.ed-intro-feature {
+	position: relative;
+	padding-bottom: 25px;
+	border-bottom: 1px solid #ededed;
+	@media #{$xs} {
+		flex-wrap: wrap;
+	}
+	&:before {
+		top: 0;
+		left: 40%;
+		width: 1px;
+		content: '';
+		height: 100%;
+		position: absolute;
+		background-color: #ededed;
+		@media #{$xl,$lg,$md,$sm,$xs} {
+			display: none;
+		}
+	}
+	ul {
+		width: 100%;
+		max-width: 285px;
+		li {
+			display: flex;
+			font-size: 18px;
+			font-weight: 600;
+			margin-bottom: 15px;
+			color: var(--ed-black-color);
+			i {
+				font-size: 28px;
+				margin-right: 10px;
+				color: var(--ed-red-color);
+			}
+		}
+	}
+	.intro-salary {
+		width: 100%;
+		max-width: 390px;
+		padding-left: 35px;
+		@media #{$xs} {
+			padding-left: 0;
+		}
+		h3 {
+			font-size: 22px;
+			font-weight: 800;
+			padding-bottom: 15px;
+			color: var(--ed-black-color);
+		}
+		.in-sl-item {
+			width: 100%;
+			height: 35px;
+			display: flex;
+			font-size: 14px;
+			font-weight: 700;
+			padding: 0px 20px;
+			margin-bottom: 6px;
+			align-items: center;
+			border-radius: 30px;
+			color: var(--ed-black-color);
+			justify-content: space-between;
+			&:is(.item-1){
+				width: 80%;
+				background-color: var(--ed-yellow-color);
+			}
+			&:is(.item-2){
+				background-color: var(--ed-purple-color);
+			}
+		}
+	}
+}

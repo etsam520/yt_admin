@@ -1,0 +1,171 @@
+.ed-blog-details-text {
+	margin: 0 auto;
+	max-width: 730px;
+}
+.ed-blog-details-text {
+	p {
+		font-size: 18px;
+		padding-bottom: 40px;
+		span {
+			font-size: 30px;
+			font-weight: 600;
+		}
+	}
+	h3 {
+		color: #171616;
+		font-size: 28px;
+		font-weight: 800;
+		padding-bottom: 25px;
+	}
+	ul {
+		margin-bottom: 50px;
+	}
+	li {
+		font-size: 18px;
+		position: relative;
+		padding-left: 15px;
+		margin-bottom: 12px;
+		span {
+			font-weight: 600;
+		}
+		&:before {
+			left: 0;
+			top: 10px;
+			width: 4px;
+			height: 6px;
+			content: '';
+			position: absolute;
+			border-radius: 100%;
+			background-color: var(--ed-prime-c);
+		}
+	}
+	blockquote {
+		z-index: 1;
+		color: #22282F;
+		font-size: 20px;
+		font-weight: 500;
+		margin-top: 40px;
+		margin-bottom: 60px;
+		position: relative;
+		border-radius: 8px;
+		padding: 40px 40px 35px;
+		background-color: #F7F7F8;
+		border-left: 4px solid #00FFB4;
+		&:before {
+			top: 15px;
+			left: 40px;
+			z-index: -1;
+			opacity: 0.3;
+			line-height: 1;
+			color: #00FFB4;
+			font-size: 80px;
+			font-weight: 900;
+			content: "\f10d";
+			position: absolute;
+			font-family: "Font Awesome 5 Free";
+		}
+		span {
+			color: #171616;
+			display: block;
+			font-size: 18px;
+			margin-top: 15px;
+			font-weight: 700;
+			padding-left: 110px;
+			position: relative;
+			text-transform: uppercase;
+			&:before {
+				left: 0;
+				top: 13px;
+				width: 90px;
+				height: 2px;
+				content: "";
+				position: absolute;
+				background-color: #00FFB4;
+			}
+		}
+	}
+}
+.ed-blog-details-img {
+	overflow: hidden;
+	border-radius: 12px;
+	display: inline-block;
+}
+.art-blog-share-tag {
+	gap: 15px;
+	border-top: 1px solid #D9D9D9;
+	border-bottom: 1px solid #D9D9D9;
+	span {
+		color: #010101;
+		font-size: 20px;
+		display: block;
+		font-weight: 600;
+		margin-bottom: 10px;
+		margin-right: 15px;
+	}
+	.art-blog-tag {
+		a {
+			margin: 5px;
+			font-size: 14px;
+			padding: 5px 15px;
+			border-radius: 30px;
+			display: inline-block;
+			background-color: #F1F1F1;
+			&:hover {
+				color: #fff;
+				background-color: var(--ed-prime-c);
+			}
+		}
+	}
+	.art-blog-share {
+		a {
+			width: 36px;
+			margin: 5px;
+			height: 36px;
+			border-radius: 100%;
+			display: inline-block;
+		}
+	}
+}
+.art-blog-details-author {
+	padding: 30px;
+	gap: 30px 25px;
+	margin-top: 40px;
+	border-radius: 8px;
+	margin-bottom: 60px;
+	background: #EFEBFC;
+	.admin-title-social  {
+		margin-bottom: 10px;
+	}
+	.inner-img {
+		width: 140px;
+		height: 140px;
+		overflow: hidden;
+		border-radius: 100%;
+		border: 4px solid #fff;
+	}
+	.inner-text {
+		max-width: 500px;
+		h4 {
+			color: #010101;
+			line-height: 1;
+			color: #171616;
+			font-size: 22px;
+			font-weight: 700;
+		}
+		p {
+			color: #171616;
+			font-size: 18px;
+			padding-bottom: 0;
+		}
+	}
+	.inner-social {
+		margin-top: 15px;
+		a {
+			color: #010101;
+			margin-right: 15px;
+			&:hover {
+				color: var(--art-base-color-1);
+			}
+		}
+	}
+}

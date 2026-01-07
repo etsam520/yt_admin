@@ -1,0 +1,92 @@
+.ed-evt-text-wrap {
+	.item-thumb {
+		overflow: hidden;
+		border-radius: 12px;
+		display: inline-block;
+	}
+}
+.ed-evt-text {
+	h3 {
+		color: #171616;
+		font-size: 32px;
+		font-weight: 800;
+		padding-bottom: 22px;
+	}
+	p {
+		font-size: 18px;
+		padding-bottom: 50px;
+	}
+	li {
+		padding-left: 18px;
+		position: relative;
+		margin-bottom: 20px;
+		&:before {
+			left: 0;
+			top: 13px;
+			width: 6px;
+			content: '';
+			height: 6px;
+			position: absolute;
+			border-radius: 100%;
+			background-color: #3361FF;
+		}
+		span {
+			font-weight: 600;
+		}
+	}
+	.evt-speaker-item {
+		.item-img {
+			overflow: hidden;
+			border-radius: 8px;
+			margin-bottom: 20px;
+			border: 2px solid #51ECBE;
+			box-shadow: 0px 4px 0px 0px #000000;
+			@media #{$xs,$xxs} {
+				max-height: 350px;
+			}
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+		.item-text {
+			h4 {
+				color: #171616;
+				font-size: 24px;
+				font-weight: 700;
+			}
+		}
+	}
+	.ed-faq-accordion {
+		.accordion-button span {
+			font-size: 20px;
+			font-weight: 600;
+			img {
+				width: 27px;
+				height: 32px;
+				margin-right: 20px;
+			}
+		}
+		.accordion-body {
+			padding-left: 55px;
+			@media #{$xs,$xxs} {
+				padding-left: 0;
+			}
+		}
+		.accordion-item {
+			padding: 20px 0px;
+		}
+		.accordion-button:not(.collapsed) {
+			padding-bottom: 5px;
+		}
+		.accordion-button::after {
+			top: 5px;
+			font-size: 20px;
+			content: '\f078';
+			font-weight: 900;
+			background-image: none;
+			font-family: "Font Awesome 5 Free";
+		}
+	}
+}

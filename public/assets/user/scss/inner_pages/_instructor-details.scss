@@ -1,0 +1,30 @@
+.ed-instr-d {
+	padding-top: 195px;
+}
+.ed-instr-content {
+	.ed-back-btn {
+		font-size: 18px;
+		font-weight: 500;
+		i {
+			@extend%gradient-text;
+		}
+	}
+	.ed-crd-inst-wrap .item-img .inner-img {
+		max-width: 565px;
+		box-shadow: 0px 8px 0px 0px #171616;
+	}
+	.ed-crd-inst-wrap .item-text {
+		max-width: 758px;
+	}
+	.ed-crd-inst-wrap .item-text .item-name-degi h3 {
+		color: #171616;
+		font-size: 48px;
+		font-weight: 700;
+	}
+	.ed-crd-inst-wrap .item-text .item-desc ul {
+		margin-bottom: 25px;
+	}
+	.ed-crd-inst-wrap .item-text .item-desc li {
+		margin-bottom: 10px;
+	}
+}

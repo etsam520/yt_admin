@@ -1,0 +1,23 @@
+.ed-tm1-feed-sec {
+	.ed-sec-title {
+		margin: 0 auto;
+		max-width: 875px;
+	}
+}
+.ed-tm1-feed-content {
+	.ed-team-item-1 {
+		margin-bottom: 40px;
+	}
+	.ed-team-item-2 {
+		margin-bottom: 40px;
+	}
+	.col-lg-3 {
+		&:nth-child(even) {
+			.ed-team-item-1 {
+				.item-img {
+					border-radius: 100%;
+				}
+			}
+		}
+	}
+}

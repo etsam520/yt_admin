@@ -1,0 +1,20 @@
+.ed-zm-text {
+	.item-img {
+		overflow: hidden;
+		border-radius: 12px;
+		display: inline-block;
+	}
+	.item-text {
+		h3 {
+			color: #171616;
+			font-size: 36px;
+			font-weight: 800;
+			padding-bottom: 20px;
+		}
+		p {
+			font-size: 18px;
+			max-width: 903px;
+			padding-bottom: 20px;
+		}
+	}
+}

@@ -1,0 +1,679 @@
+  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Question : 1                        
+  ----------------------------------- -----------------------------------------------------------------------------------------------------------------------------------------------------------
+  Question English                    Which software loads first when a computer starts?
+
+  Question Hindi                      कंप्यूटर शुरू होते समय सबसे पहले कौन सा सॉफ़्टवेयर लोड होता है?
+
+  Type                                multiple_choice
+
+  Option English                      Operating System
+
+  Option English                      BIOS
+
+  Option English                      Antivirus
+
+  Option English                      Device Driver
+
+  Option Hindi                        ऑपरेटिंग सिस्टम
+
+  Option Hindi                        बायोस
+
+  Option Hindi                        एंटीवायरस
+
+  Option Hindi                        डिवाइस ड्राइवर
+
+  Correct Answer                      B
+
+  Solution English                    When the computer is powered on, the first software that executes is BIOS (Basic Input Output System). It initializes the hardware and then loads the OS.
+
+  Solution Hindi                      जब computer power on होता है, सबसे पहले BIOS (Basic Input Output System) execute होता है। यह hardware initialize करता है और फिर OS को load करता है।
+
+  Specialization                      ISRO, DRDO, HAL & Other PSU Companies
+  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Question : 2                        
+  ----------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Question English                    Which type of Fire Extinguisher is most suitable for electrical fires?
+
+  Question Hindi                      Fire Extinguisher का कौन सा प्रकार Electrical Fire के लिए सबसे उपयुक्त है?
+
+  Type                                multiple_choice
+
+  Option English                      Water Type
+
+  Option English                      Foam Type
+
+  Option English                      CO₂ Type
+
+  Option English                      Dry Powder
+
+  Option Hindi                        पानी आधारित
+
+  Option Hindi                        फोम आधारित
+
+  Option Hindi                        कार्बन डाइऑक्साइड आधारित
+
+  Option Hindi                        सूखा पाउडर
+
+  Correct Answer                      C
+
+  Solution English                    In an electrical fire, using water or foam is dangerous. A CO₂ extinguisher is the safest because it cuts off the oxygen supply and does not conduct electricity.
+
+  Solution Hindi                      Electrical fire में पानी या फोम का use खतरनाक होता है। CO₂ extinguisher सबसे सुरक्षित होता है क्योंकि यह oxygen supply काट देता है और current conduct नहीं करता।
+
+  Specialization                      ISRO, DRDO, HAL & Other PSU Companies
+  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Question : 3                        
+  ----------------------------------- ----------------------------------------------------------------------------------------------------------------------------------
+  Question English                    What is the primary function of an Operating System?
+
+  Question Hindi                      Operating System का मुख्य कार्य क्या है?
+
+  Type                                multiple_choice
+
+  Option English                      Only to run internet
+
+  Option English                      To manage hardware and software
+
+  Option English                      To store data permanently
+
+  Option English                      To remove viruses
+
+  Option Hindi                        केवल Internet चलाना
+
+  Option Hindi                        Hardware और Software को manage करना
+
+  Option Hindi                        Data को permanent store करना
+
+  Option Hindi                        Virus हटाना
+
+  Correct Answer                      B
+
+  Solution English                    The OS is the resource manager of a computer. It establishes communication between hardware (CPU, memory, devices) and software.
+
+  Solution Hindi                      OS computer का resource manager है। यह hardware (CPU, Memory, Devices) और software के बीच communication establish करता है।
+
+  Specialization                      ISRO, DRDO, HAL & Other PSU Companies
+  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+  ----------------------------------------------------------------------------------------------------------------------------------
+  Question : 4                        
+  ----------------------------------- ----------------------------------------------------------------------------------------------
+  Question English                    Which command shows the current directory in Linux?
+
+  Question Hindi                      Linux में वर्तमान directory देखने का command कौन सा है?
+
+  Type                                multiple_choice
+
+  Option English                      cd
+
+  Option English                      ls
+
+  Option English                      pwd
+
+  Option English                      dir
+
+  Option Hindi                        cd
+
+  Option Hindi                        ls
+
+  Option Hindi                        pwd
+
+  Option Hindi                        dir
+
+  Correct Answer                      C
+
+  Solution English                    In Linux, the pwd (print working directory) command shows the path of the current directory.
+
+  Solution Hindi                      Linux में pwd (print working directory) command current directory path बताता है।
+
+  Specialization                      ISRO, DRDO, HAL & Other PSU Companies
+  ----------------------------------------------------------------------------------------------------------------------------------
+
+  -------------------------------------------------------------------------------------------------------------------------
+  Question : 5                        
+  ----------------------------------- -------------------------------------------------------------------------------------
+  Question English                    Which keys are used together to permanently delete a file in Windows?
+
+  Question Hindi                      Windows में किसी file को permanently delete करने के लिए कौन सी keys एक साथ दबाई जाती हैं?
+
+  Type                                multiple_choice
+
+  Option English                      Ctrl + X
+
+  Option English                      Shift + Delete
+
+  Option English                      Alt + Delete
+
+  Option English                      Ctrl + Alt
+
+  Option Hindi                        Ctrl + X
+
+  Option Hindi                        Shift + Delete
+
+  Option Hindi                        Alt + Delete
+
+  Option Hindi                        Ctrl + Alt
+
+  Correct Answer                      B
+
+  Solution English                    Using Shift + Delete bypasses the Recycle Bin and permanently deletes the file.
+
+  Solution Hindi                      Shift + Delete key से file Recycle Bin bypass करके permanently delete हो जाती है।
+
+  Specialization                      ISRO, DRDO, HAL & Other PSU Companies
+  -------------------------------------------------------------------------------------------------------------------------
+
+  --------------------------------------------------------------------------------------------------------------------------------------------
+  Question : 6                        
+  ----------------------------------- --------------------------------------------------------------------------------------------------------
+  Question English                    What is the correct order of the booting process?
+
+  Question Hindi                      Booting process का सही क्रम कौन सा है?
+
+  Type                                multiple_choice
+
+  Option English                      OS → BIOS → POST → Kernel
+
+  Option English                      BIOS → POST → OS → Kernel
+
+  Option English                      POST → BIOS → OS → Kernel
+
+  Option English                      BIOS → POST → Boot Loader → OS
+
+  Option Hindi                        OS → BIOS → POST → Kernel
+
+  Option Hindi                        BIOS → POST → OS → Kernel
+
+  Option Hindi                        POST → BIOS → OS → Kernel
+
+  Option Hindi                        BIOS → POST → Boot Loader → OS
+
+  Correct Answer                      D
+
+  Solution English                    In booting, BIOS runs first, then POST (Power On Self Test), and finally the Boot Loader loads the OS.
+
+  Solution Hindi                      Booting में पहले BIOS run होता है, फिर POST (Power On Self Test), फिर Boot Loader OS को load करता है।
+
+  Specialization                      ISRO, DRDO, HAL & Other PSU Companies
+  --------------------------------------------------------------------------------------------------------------------------------------------
+
+  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Question : 7                        
+  ----------------------------------- ------------------------------------------------------------------------------------------------------------------------------------
+  Question English                    Which shortcut quickly opens Task Manager in Windows?
+
+  Question Hindi                      Windows में Task Manager को जल्दी खोलने के लिए कौन सा shortcut है?
+
+  Type                                multiple_choice
+
+  Option English                      Ctrl + Alt + Delete
+
+  Option English                      Ctrl + Shift + T
+
+  Option English                      Alt + F4
+
+  Option English                      Win + R
+
+  Option Hindi                        Ctrl + Alt + Delete
+
+  Option Hindi                        Ctrl + Shift + T
+
+  Option Hindi                        Alt + F4
+
+  Option Hindi                        Win + R
+
+  Correct Answer                      A
+
+  Solution English                    Ctrl + Alt + Delete opens options like Task Manager and Lock Screen. For direct Task Manager, Ctrl + Shift + Esc can also be used.
+
+  Solution Hindi                      Ctrl + Alt + Delete से Task Manager, Lock Screen आदि options खुलते हैं। Directly Task Manager के लिए Ctrl + Shift + Esc भी use कर सकते हैं।
+
+  Specialization                      ISRO, DRDO, HAL & Other PSU Companies
+  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+  -------------------------------------------------------------------------------------------------------------------------------------------------
+  Question : 8                        
+  ----------------------------------- -------------------------------------------------------------------------------------------------------------
+  Question English                    Which component inside a desktop computer connects all parts together?
+
+  Question Hindi                      Desktop Computer के अंदर कौन सा component सभी parts को जोड़ता है?
+
+  Type                                multiple_choice
+
+  Option English                      Processor
+
+  Option English                      Motherboard
+
+  Option English                      RAM
+
+  Option English                      SMPS
+
+  Option Hindi                        प्रोसेसर
+
+  Option Hindi                        मदरबोर्ड
+
+  Option Hindi                        रैम
+
+  Option Hindi                        एसएमपीएस
+
+  Correct Answer                      B
+
+  Solution English                    The motherboard is the main circuit board of a computer, connecting CPU, RAM, storage, and expansion cards.
+
+  Solution Hindi                      Motherboard computer का main circuit board है जिस पर CPU, RAM, Storage, Expansion cards connected रहते हैं।
+
+  Specialization                      ISRO, DRDO, HAL & Other PSU Companies
+  -------------------------------------------------------------------------------------------------------------------------------------------------
+
+  ----------------------------------------------------------------------------------------------------------------
+  Question : 9                        
+  ----------------------------------- ----------------------------------------------------------------------------
+  Question English                    Which command is used to change directory in Linux?
+
+  Question Hindi                      Linux में directory बदलने के लिए कौन सा command प्रयोग होता है?
+
+  Type                                multiple_choice
+
+  Option English                      pwd – print working directory
+
+  Option English                      ls – list command
+
+  Option English                      cd – change directory
+
+  Option English                      mkdir – make directory
+
+  Option Hindi                        pwd – print working directory
+
+  Option Hindi                        ls – list command
+
+  Option Hindi                        cd – change directory
+
+  Option Hindi                        mkdir – make directory
+
+  Correct Answer                      C
+
+  Solution English                    In Linux, the cd (change directory) command is used to change directories.
+
+  Solution Hindi                      Linux में cd (change directory) command directory बदलने के लिए use होता है।
+
+  Specialization                      ISRO, DRDO, HAL & Other PSU Companies
+  ----------------------------------------------------------------------------------------------------------------
+
+  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Question : 10                       
+  ----------------------------------- ------------------------------------------------------------------------------------------------------------------------------------
+  Question English                    What is the use of Control Panel in Windows OS?
+
+  Question Hindi                      Windows OS में Control Panel का उपयोग किसके लिए किया जाता है?
+
+  Type                                multiple_choice
+
+  Option English                      Only for deleting files
+
+  Option English                      To configure system settings and hardware devices
+
+  Option English                      For internet browsing
+
+  Option English                      To run games
+
+  Option Hindi                        केवल Files को delete करने के लिए
+
+  Option Hindi                        System settings और hardware devices को configure करने के लिए
+
+  Option Hindi                        Internet browsing के लिए
+
+  Option Hindi                        Games run करने के लिए
+
+  Correct Answer                      B
+
+  Solution English                    The Control Panel in Windows OS allows the user to manage system settings, hardware, software, user accounts, and security.
+
+  Solution Hindi                      Control Panel Windows OS का वो section है जहाँ से user system settings, hardware, software, user accounts, security manage कर सकता है।
+
+  Specialization                      ISRO, DRDO, HAL & Other PSU Companies
+  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Question : 11                       
+  ----------------------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Question English                    Which command is used to create a new directory in Linux?
+
+  Question Hindi                      Linux में नया directory बनाने का command कौन सा है?
+
+  Type                                multiple_choice
+
+  Option English                      rmdir
+
+  Option English                      mkdir
+
+  Option English                      ls
+
+  Option English                      cat
+
+  Option Hindi                        rmdir
+
+  Option Hindi                        mkdir
+
+  Option Hindi                        ls
+
+  Option Hindi                        cat
+
+  Correct Answer                      B
+
+  Solution English                    In Linux, the mkdir (make directory) command is used to create a new directory. Example: mkdir student → creates a new directory named 'student'. rmdir removes an empty directory, ls lists files and directories, and cat shows file contents.
+
+  Solution Hindi                      Linux में mkdir (make directory) command का उपयोग नई directory बनाने के लिए किया जाता है। उदाहरण: mkdir student → यह “student” नाम की नई directory बना देगा। जबकि rmdir किसी खाली directory को हटाने के लिए, ls files और directories को list करने के लिए, और cat file के content देखने के लिए use होता है।
+
+  Specialization                      ISRO, DRDO, HAL & Other PSU Companies
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Question : 12                       
+  ----------------------------------- -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Question English                    What is the shortcut to open Run dialog box in Windows?
+
+  Question Hindi                      Windows में Run Dialog Box खोलने का shortcut क्या है?
+
+  Type                                multiple_choice
+
+  Option English                      Ctrl + R
+
+  Option English                      Win + R
+
+  Option English                      Alt + R
+
+  Option English                      Shift + R
+
+  Option Hindi                        Ctrl + R
+
+  Option Hindi                        Win + R
+
+  Option Hindi                        Alt + R
+
+  Option Hindi                        Shift + R
+
+  Correct Answer                      B
+
+  Solution English                    Pressing Windows Key + R opens the Run dialog box. It is used to quickly run commands such as cmd, msconfig, and notepad. This shortcut is very useful for system administrators.
+
+  Solution Hindi                      Windows Key + R दबाने से Run dialog box खुलता है। इसका उपयोग command जैसे cmd, msconfig, notepad आदि को तुरंत run करने के लिए किया जाता है। यह shortcut system administrators के लिए काफी उपयोगी है।
+
+  Specialization                      ISRO, DRDO, HAL & Other PSU Companies
+  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Question : 13                       
+  ----------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Question English                    What is the main function of SMPS?
+
+  Question Hindi                      SMPS का मुख्य कार्य क्या है?
+
+  Type                                multiple_choice
+
+  Option English                      Provide Power Backup
+
+  Option English                      Convert AC to DC current
+
+  Option English                      Provide Power Supply
+
+  Option English                      Run the Operating System
+
+  Option Hindi                        Power Backup Provide करना
+
+  Option Hindi                        Current को AC से DC में convert करना
+
+  Option Hindi                        Power सप्लाई Provide करना
+
+  Option Hindi                        Operating System चलाना
+
+  Correct Answer                      B
+
+  Solution English                    SMPS (Switch Mode Power Supply) converts AC mains current into DC. It provides regulated power, ensuring stable supply to the motherboard, CPU, and hard disk.
+
+  Solution Hindi                      SMPS (Switch Mode Power Supply) AC mains से आने वाली current को DC में बदलता है। यह regulated power देता है जिससे motherboard, CPU, hard disk जैसे parts को stable supply मिलती है।
+
+  Specialization                      ISRO, DRDO, HAL & Other PSU Companies
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Question : 14                       
+  ----------------------------------- -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Question English                    Which option must be enabled to show file extensions by default in Windows?
+
+  Question Hindi                      Windows में file extension को default रूप से दिखाने के लिए कौन सा option enable करना पड़ता है?
+
+  Type                                multiple_choice
+
+  Option English                      Hide extensions for known file types
+
+  Option English                      Show hidden files
+
+  Option English                      Show extensions for all files
+
+  Option English                      View → Large Icons
+
+  Option Hindi                        Hide extensions for known file types
+
+  Option Hindi                        Show hidden files
+
+  Option Hindi                        Show extensions for all files
+
+  Option Hindi                        View → Large Icons
+
+  Correct Answer                      C
+
+  Solution English                    In Windows Explorer, enabling 'Show extensions for all files' is necessary to know the actual type of file. It shows extensions like .exe, .jpg, .docx, helping to prevent viruses.
+
+  Solution Hindi                      Windows Explorer में file का actual type जानने के लिए extension दिखाना जरूरी होता है। Show extensions for all files enable करने से .exe, .jpg, .docx जैसे extensions हमेशा दिखाई देते हैं, जिससे virus से बचाव में भी मदद मिलती है।
+
+  Specialization                      ISRO, DRDO, HAL & Other PSU Companies
+  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Question : 15                       
+  ----------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Question English                    Which command is used to enter superuser mode in Linux?
+
+  Question Hindi                      Linux में superuser mode में जाने के लिए कौन सा command प्रयोग होता है?
+
+  Type                                multiple_choice
+
+  Option English                      root
+
+  Option English                      sudo
+
+  Option English                      admin
+
+  Option English                      su
+
+  Option Hindi                        root
+
+  Option Hindi                        sudo
+
+  Option Hindi                        admin
+
+  Option Hindi                        su
+
+  Correct Answer                      D
+
+  Solution English                    In Linux, the su command is used to become the superuser (root user). The root user has full control of the system, while sudo provides temporary superuser permissions.
+
+  Solution Hindi                      Linux में su command का उपयोग superuser (root user) बनने के लिए किया जाता है। Root user के पास पूरे system का full control होता है। जबकि sudo command temporary superuser permissions देता है।
+
+  Specialization                      ISRO, DRDO, HAL & Other PSU Companies
+  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+  -------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Question : 16                       
+  ----------------------------------- -------------------------------------------------------------------------------------------------------------------------------
+  Question English                    What is the use of Alt + Tab in Windows?
+
+  Question Hindi                      Windows में shortcut “Alt + Tab” किस काम के लिए है?
+
+  Type                                multiple_choice
+
+  Option English                      To shutdown
+
+  Option English                      To switch windows
+
+  Option English                      To delete files
+
+  Option English                      To open Control Panel
+
+  Option Hindi                        Shutdown करने के लिए
+
+  Option Hindi                        Windows Switch करने के लिए
+
+  Option Hindi                        File delete करने के लिए
+
+  Option Hindi                        Control Panel खोलने के लिए
+
+  Correct Answer                      B
+
+  Solution English                    Alt + Tab allows the user to quickly switch between applications. It is one of the most useful shortcuts for multitasking.
+
+  Solution Hindi                      Alt + Tab से user एक application से दूसरे application में जल्दी switch कर सकता है। यह multitasking के लिए सबसे ज्यादा उपयोगी shortcut है।
+
+  Specialization                      ISRO, DRDO, HAL & Other PSU Companies
+  -------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Question : 17                       
+  ----------------------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Question English                    What is the main function of Boot Loader?
+
+  Question Hindi                      Boot Loader का मुख्य कार्य क्या है?
+
+  Type                                multiple_choice
+
+  Option English                      To run Post Process
+
+  Option English                      To load the Operating System
+
+  Option English                      To install Operating System
+
+  Option English                      All of These
+
+  Option Hindi                        Post Process चलाने के लिए
+
+  Option Hindi                        Operating System को load करना
+
+  Option Hindi                        ऑपरेटिंग System Install करने के लिए
+
+  Option Hindi                        All of These
+
+  Correct Answer                      B
+
+  Solution English                    The Boot Loader executes after BIOS. It loads the operating system into memory and switches the system into user mode. Examples are winload.exe in Windows and GRUB in Linux.
+
+  Solution Hindi                      Boot Loader BIOS के बाद execute होता है। यह operating system को memory में load करके system को user mode में लेकर आता है। Windows में winload.exe और Linux में GRUB Boot Loader के example हैं।
+
+  Specialization                      ISRO, DRDO, HAL & Other PSU Companies
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Question : 18                       
+  ----------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------
+  Question English                    Which command is used to view hidden files in Linux?
+
+  Question Hindi                      Linux में hidden files को देखने के लिए कौन सा command use होता है?
+
+  Type                                multiple_choice
+
+  Option English                      ls -h
+
+  Option English                      ls -a
+
+  Option English                      ls -s
+
+  Option English                      ls -x
+
+  Option Hindi                        ls -h
+
+  Option Hindi                        ls -a
+
+  Option Hindi                        ls -s
+
+  Option Hindi                        ls -x
+
+  Correct Answer                      B
+
+  Solution English                    In Linux, hidden files start with a dot (.), such as .bashrc. The ls -a command is used to view them, showing all files including hidden ones.
+
+  Solution Hindi                      Linux में hidden files dot (.) से शुरू होती हैं, जैसे .bashrc। इन्हें देखने के लिए ls -a command use किया जाता है, जिससे सभी files including hidden दिखाई देती हैं।
+
+  Specialization                      ISRO, DRDO, HAL & Other PSU Companies
+  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Question : 19                       
+  ----------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Question English                    What is the use of Device Manager in Windows OS?
+
+  Question Hindi                      Windows OS में “Device Manager” किसके लिए उपयोग होता है?
+
+  Type                                multiple_choice
+
+  Option English                      To manage files
+
+  Option English                      To configure internet
+
+  Option English                      To manage and troubleshoot hardware devices
+
+  Option English                      To install applications
+
+  Option Hindi                        Files manage करने के लिए
+
+  Option Hindi                        Internet configure करने के लिए
+
+  Option Hindi                        Hardware devices manage और troubleshoot करने के लिए
+
+  Option Hindi                        Application Install करने के लिए
+
+  Correct Answer                      C
+
+  Solution English                    Device Manager is a Windows system tool. It allows users to update drivers, enable/disable devices, and troubleshoot errors.
+
+  Solution Hindi                      Device Manager Windows का system tool है। इससे user hardware drivers update कर सकता है, किसी device को enable/disable कर सकता है और errors troubleshoot कर सकता है।
+
+  Specialization                      ISRO, DRDO, HAL & Other PSU Companies
+  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Question : 20                       
+  ----------------------------------- ------------------------------------------------------------------------------------------------------------------------------------
+  Question English                    What is the use of Control Panel in Windows OS?
+
+  Question Hindi                      Windows OS में Control Panel का उपयोग किसके लिए किया जाता है?
+
+  Type                                multiple_choice
+
+  Option English                      Only for deleting files
+
+  Option English                      To configure system settings and hardware devices
+
+  Option English                      For internet browsing
+
+  Option English                      To run games
+
+  Option Hindi                        केवल Files को delete करने के लिए
+
+  Option Hindi                        System settings और hardware devices को configure करने के लिए
+
+  Option Hindi                        Internet browsing के लिए
+
+  Option Hindi                        Games run करने के लिए
+
+  Correct Answer                      B
+
+  Solution English                    The Control Panel in Windows OS allows the user to manage system settings, hardware, software, user accounts, and security.
+
+  Solution Hindi                      Control Panel Windows OS का वो section है जहाँ से user system settings, hardware, software, user accounts, security manage कर सकता है।
+
+  Specialization                      ISRO, DRDO, HAL & Other PSU Companies
+  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------

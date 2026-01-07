@@ -1,0 +1,24 @@
+{
+  "name": "pdf-math-renderer",
+  "version": "1.0.0",
+  "description": "Math formula renderer for PDF generation",
+  "main": "resources/js/math-renderer.js",
+  "scripts": {
+    "install-puppeteer": "npm install puppeteer katex",
+    "render-math": "node resources/js/math-renderer.js"
+  },
+  "dependencies": {
+    "puppeteer": "^21.0.0",
+    "katex": "^0.16.9"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "pdf",
+    "math",
+    "latex",
+    "katex",
+    "mathjax"
+  ],
+  "author": "",
+  "license": "MIT"
+}

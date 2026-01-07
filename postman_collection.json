@@ -1,0 +1,328 @@
+{
+  "info": {
+    "name": "PDF Generation API",
+    "description": "Complete API collection for testing PDF generation with language options",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "1. Get Templates & Options",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/api/admin/pdf/templates",
+          "host": ["{{base_url}}"],
+          "path": ["api", "admin", "pdf", "templates"]
+        },
+        "description": "Get all available templates, language options, and configuration options"
+      }
+    },
+    {
+      "name": "2. Test PDF Generation",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/api/admin/pdf/test",
+          "host": ["{{base_url}}"],
+          "path": ["api", "admin", "pdf", "test"]
+        },
+        "description": "Generate a test PDF with sample data to verify system is working"
+      }
+    },
+    {
+      "name": "3. Generate Hindi-Only PDF",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"template\": \"bilingual\",\n  \"language\": \"hindi\",\n  \"options\": {\n    \"show_solutions\": true,\n    \"show_question_numbers\": true,\n    \"show_category_info\": true,\n    \"header_text\": \"हिंदी परीक्षा पत्र 2025\",\n    \"footer_text\": \"© 2025 शिक्षा विभाग\"\n  }\n}"
+        },
+        "url": {
+          "raw": "{{base_url}}/api/admin/pdf/generate",
+          "host": ["{{base_url}}"],
+          "path": ["api", "admin", "pdf", "generate"]
+        },
+        "description": "Generate PDF with Hindi language only"
+      }
+    },
+    {
+      "name": "4. Generate English-Only PDF",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"template\": \"bilingual\",\n  \"language\": \"english\",\n  \"options\": {\n    \"show_solutions\": true,\n    \"show_question_numbers\": true,\n    \"show_category_info\": true,\n    \"header_text\": \"English Question Paper 2025\",\n    \"footer_text\": \"© 2025 Education Department\"\n  }\n}"
+        },
+        "url": {
+          "raw": "{{base_url}}/api/admin/pdf/generate",
+          "host": ["{{base_url}}"],
+          "path": ["api", "admin", "pdf", "generate"]
+        },
+        "description": "Generate PDF with English language only"
+      }
+    },
+    {
+      "name": "5. Generate Bilingual PDF",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"template\": \"bilingual\",\n  \"language\": \"both\",\n  \"options\": {\n    \"show_solutions\": true,\n    \"show_question_numbers\": true,\n    \"show_category_info\": true,\n    \"show_ca_date\": true,\n    \"header_text\": \"द्विभाषी परीक्षा पत्र / Bilingual Question Paper\",\n    \"footer_text\": \"© 2025 EasyWay Education\"\n  }\n}"
+        },
+        "url": {
+          "raw": "{{base_url}}/api/admin/pdf/generate",
+          "host": ["{{base_url}}"],
+          "path": ["api", "admin", "pdf", "generate"]
+        },
+        "description": "Generate PDF with both Hindi and English languages"
+      }
+    },
+    {
+      "name": "6. Generate with Answer Key",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"template\": \"bilingual\",\n  \"language\": \"both\",\n  \"options\": {\n    \"show_solutions\": true,\n    \"show_question_numbers\": true,\n    \"show_answer_key\": true,\n    \"highlight_correct_answers\": true,\n    \"answers_on_separate_page\": false,\n    \"header_text\": \"Answer Key - Practice Test\"\n  }\n}"
+        },
+        "url": {
+          "raw": "{{base_url}}/api/admin/pdf/generate",
+          "host": ["{{base_url}}"],
+          "path": ["api", "admin", "pdf", "generate"]
+        },
+        "description": "Generate PDF with answer key and highlighted correct answers"
+      }
+    },
+    {
+      "name": "7. Generate Grouped by Subject",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"template\": \"bilingual\",\n  \"language\": \"both\",\n  \"options\": {\n    \"show_solutions\": false,\n    \"show_question_numbers\": true,\n    \"group_by_subject\": true,\n    \"show_category_info\": true,\n    \"header_text\": \"Subject-wise Question Paper\"\n  }\n}"
+        },
+        "url": {
+          "raw": "{{base_url}}/api/admin/pdf/generate",
+          "host": ["{{base_url}}"],
+          "path": ["api", "admin", "pdf", "generate"]
+        },
+        "description": "Generate PDF grouped by subjects with headers"
+      }
+    },
+    {
+      "name": "8. Generate Grouped by Topic",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"template\": \"bilingual\",\n  \"language\": \"both\",\n  \"options\": {\n    \"show_solutions\": false,\n    \"show_question_numbers\": true,\n    \"group_by_topic\": true,\n    \"show_category_info\": true,\n    \"header_text\": \"Topic-wise Question Paper\"\n  }\n}"
+        },
+        "url": {
+          "raw": "{{base_url}}/api/admin/pdf/generate",
+          "host": ["{{base_url}}"],
+          "path": ["api", "admin", "pdf", "generate"]
+        },
+        "description": "Generate PDF grouped by topics within subjects"
+      }
+    },
+    {
+      "name": "9. Generate Two-Column Layout",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"template\": \"bilingual\",\n  \"language\": \"english\",\n  \"options\": {\n    \"show_solutions\": false,\n    \"two_column_layout\": true,\n    \"show_images\": false,\n    \"font_size\": 10,\n    \"header_text\": \"Compact Question Paper\"\n  }\n}"
+        },
+        "url": {
+          "raw": "{{base_url}}/api/admin/pdf/generate",
+          "host": ["{{base_url}}"],
+          "path": ["api", "admin", "pdf", "generate"]
+        },
+        "description": "Generate space-efficient PDF with two-column layout"
+      }
+    },
+    {
+      "name": "10. Generate with Watermark",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"template\": \"bilingual\",\n  \"language\": \"both\",\n  \"options\": {\n    \"show_solutions\": false,\n    \"watermark\": \"CONFIDENTIAL\",\n    \"header_text\": \"Restricted Access - Exam Paper\"\n  }\n}"
+        },
+        "url": {
+          "raw": "{{base_url}}/api/admin/pdf/generate",
+          "host": ["{{base_url}}"],
+          "path": ["api", "admin", "pdf", "generate"]
+        },
+        "description": "Generate PDF with watermark for confidential content"
+      }
+    },
+    {
+      "name": "11. Preview PDF (HTML)",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"template\": \"bilingual\",\n  \"language\": \"both\",\n  \"options\": {\n    \"show_solutions\": true,\n    \"show_category_info\": true\n  }\n}"
+        },
+        "url": {
+          "raw": "{{base_url}}/api/admin/pdf/preview",
+          "host": ["{{base_url}}"],
+          "path": ["api", "admin", "pdf", "preview"]
+        },
+        "description": "Generate HTML preview without creating PDF file"
+      }
+    },
+    {
+      "name": "12. Generate Specific Questions",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"questions\": [1, 2, 3, 4, 5],\n  \"template\": \"bilingual\",\n  \"language\": \"both\",\n  \"options\": {\n    \"show_solutions\": true,\n    \"show_question_numbers\": true,\n    \"header_text\": \"Selected Questions\"\n  }\n}"
+        },
+        "url": {
+          "raw": "{{base_url}}/api/admin/pdf/generate",
+          "host": ["{{base_url}}"],
+          "path": ["api", "admin", "pdf", "generate"]
+        },
+        "description": "Generate PDF with specific question IDs"
+      }
+    },
+    {
+      "name": "13. Exam Paper (No Solutions)",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"template\": \"exam\",\n  \"language\": \"hindi\",\n  \"options\": {\n    \"show_solutions\": false,\n    \"show_answer_key\": false,\n    \"show_question_numbers\": true,\n    \"show_category_info\": false,\n    \"header_text\": \"प्रतियोगी परीक्षा - 2025\",\n    \"watermark\": \"परीक्षा\"\n  }\n}"
+        },
+        "url": {
+          "raw": "{{base_url}}/api/admin/pdf/generate",
+          "host": ["{{base_url}}"],
+          "path": ["api", "admin", "pdf", "generate"]
+        },
+        "description": "Generate formal exam paper without solutions"
+      }
+    },
+    {
+      "name": "14. Landscape Orientation",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"template\": \"bilingual\",\n  \"language\": \"both\",\n  \"options\": {\n    \"orientation\": \"landscape\",\n    \"page_size\": \"A4\",\n    \"two_column_layout\": true,\n    \"show_solutions\": false\n  }\n}"
+        },
+        "url": {
+          "raw": "{{base_url}}/api/admin/pdf/generate",
+          "host": ["{{base_url}}"],
+          "path": ["api", "admin", "pdf", "generate"]
+        },
+        "description": "Generate PDF in landscape orientation"
+      }
+    },
+    {
+      "name": "15. Custom Styling",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"template\": \"bilingual\",\n  \"language\": \"both\",\n  \"options\": {\n    \"font_size\": 14,\n    \"background_color\": \"#f5f5f5\",\n    \"text_color\": \"#2c3e50\",\n    \"show_solutions\": true,\n    \"header_text\": \"Custom Styled Paper\"\n  }\n}"
+        },
+        "url": {
+          "raw": "{{base_url}}/api/admin/pdf/generate",
+          "host": ["{{base_url}}"],
+          "path": ["api", "admin", "pdf", "generate"]
+        },
+        "description": "Generate PDF with custom font size and colors"
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "base_url",
+      "value": "http://localhost",
+      "type": "string"
+    }
+  ]
+}

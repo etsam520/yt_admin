@@ -1,0 +1,139 @@
+.ed-faq-accordion,
+.ed-faq-accordion-2 {
+	width: 100%;
+	margin: 0 auto;
+	max-width: 930px;
+	@media #{$md,$sm,$xs,$xxs} {
+		max-width: 100%;
+	}
+	.accordion-item,
+	.accordion-button:not(.collapsed),
+	.accordion-button {
+		background-color: transparent;
+	}
+	.accordion-item {
+		border: none;
+		border-radius: 0;
+		border-bottom: none;
+		padding: 40px 0px 30px;
+		transition: all 500ms ease-in-out;
+		border-bottom: 1px solid #000000;
+	}
+	.accordion-button {
+		padding: 0;
+		border: none;
+		font-size: 28px;
+		font-weight: 800;
+		position: relative;
+		color: var(--ed-tt-color);
+		transition: all 500ms ease;
+		@media #{$xs} {
+			font-size: 25px;
+		}
+		span {
+			max-width: 85%;
+			display: inline-block;
+			img {
+				margin-right: 42px;
+				@media #{$xs} {
+					display: none;
+				}
+			}
+		}
+	}
+
+	.accordion-button:focus {
+		border: none;
+		box-shadow: none;
+	}
+	.accordion-body {
+		padding-top: 0;
+		font-size: 18px;
+		padding-left: 90px;
+		@media #{$xs} {
+			padding-left: 0;
+		}
+		p {
+			color: #565656;
+			font-size: 22px;
+			font-weight: 500;
+			padding-bottom: 15px;
+		}
+		a {
+			color: #2c2c2b;
+			line-height: 1.5;
+			font-size: 20px;
+			font-weight: 800;
+			position: relative;
+			&:before {
+				left: 0;
+				right: 0;
+				bottom: 0;
+				width: 0%;
+				content: '';
+				height: 1px;
+				margin: 0 auto;
+				position: absolute;
+				background-color: #888887;
+				transition: all 500ms ease-in-out;
+			}
+			&:hover {
+				&:before {
+					width: 100%;
+				}
+			}
+		}
+	}
+	.accordion-button::after {
+		right: 0;
+		top: 20px;
+		content: '';
+		width: 20px;
+		height: 20px;
+		border-radius: 0;
+		position: absolute;
+		transition: all 500ms ease-in-out;
+		background-image: url(../img/icon/arrow-down.png);
+	}
+	.accordion-button:not(.collapsed) { 
+		box-shadow: none;
+		padding-bottom: 15px;
+	}
+	.accordion-button:not(.collapsed) {  
+		&:after {
+			top: 10px;
+		}
+	}
+}
+.ed-faq-accordion-2 {
+	padding-top: 30px;
+	.accordion-item {
+		padding: 30px 0px;
+		border-bottom: 1px solid #373737;
+	}
+	.accordion-button { 
+		color: #fff;
+		font-size: 21px;
+		font-weight: 700;
+	}
+	.accordion-body {
+		color: #fff;
+		padding-left: 0;
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+	.accordion-button::after { 
+		top: 50%;
+		color: #373737;
+		content: '\f067';
+		background-image: none;
+		font-family: 'Font Awesome 6 Free'; 
+		transform: translateY(-50%);
+	}
+	.accordion-button:not(.collapsed) {  
+		&:after {
+			color: #fff;
+			content: '\f068';
+		}
+	}
+}

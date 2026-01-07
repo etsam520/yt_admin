@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Database Schema Visualization</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./database.css">
+    <style>
+        /* CSS will go here */
+    </style>
+</head>
+
+<body>
+    <h1>Database Schema Visualization</h1>
+
+    <div class="schema-container">
+        <svg id="relationships-svg"></svg>
+
+        <div class="table-card" id="users" style="top: 50px; left: 50px;">
+            <div class="table-header">users</div>
+            <div class="table-body">
+                <div class="column">id <span class="datatype">bigint</span></div>
+                <div class="column">name <span class="datatype">varchar</span></div>
+                <div class="column">new_column <span class="datatype">bigint</span></div>
+            </div>
+        </div>
+
+        <div class="table-card" id="tradeNodes" style="top: 50px; left: 300px;">
+            <div class="table-header">tradeNodes</div>
+            <div class="table-body">
+                <div class="column">id <span class="datatype">bigint</span></div>
+                <div class="column">parent_id <span class="datatype">bigint</span></div>
+                <div class="column">name <span class="datatype">varchar</span></div>
+                <div class="column"><span class="label">Index</span> <span class="datatype">parent_id</span></div>
+            </div>
+        </div>
+
+        <div class="table-card" id="courses" style="top: 50px; left: 600px;">
+            <div class="table-header">courses</div>
+            <div class="table-body">
+                <div class="column">id <span class="datatype">bigint</span></div>
+                <div class="column">Course name <span class="datatype">varchar</span></div>
+                <div class="column">description <span class="datatype">varchar</span></div>
+                <div class="column">tags <span class="datatype">varchar</span></div>
+                <div class="column">image <span class="datatype">varchar</span></div>
+                <div class="column">slug <span class="datatype">varchar</span></div>
+            </div>
+        </div>
+
+        <div class="table-card" id="course_directories" style="top: 50px; left: 900px;">
+            <div class="table-header">course_directories</div>
+            <div class="table-body">
+                <div class="column">id <span class="datatype">bigint</span></div>
+                <div class="column">course_id <span class="datatype">bigint</span></div>
+                <div class="column">parent_id <span class="datatype">bigint</span></div>
+                <div class="column">name <span class="datatype">varchar</span></div>
+            </div>
+        </div>
+
+        <div class="table-card" id="video_table" style="top: 300px; left: 400px;">
+            <div class="table-header header-pink">video_table</div>
+            <div class="table-body">
+                <div class="column">id <span class="datatype">bigint</span></div>
+                <div class="column">title <span class="datatype">varchar</span></div>
+                <div class="column">description <span class="datatype">varchar</span></div>
+                <div class="column">video_url <span class="datatype">varchar</span></div>
+                <div class="column">is_public <span class="datatype">boolean</span></div>
+                <div class="column">stream_content_id <span class="datatype">bigint</span></div>
+            </div>
+        </div>
+
+        <div class="table-card" id="stream_contents" style="top: 300px; left: 700px;">
+            <div class="table-header header-purple">stream_contents</div>
+            <div class="table-body">
+                <div class="column">id <span class="datatype">bigint</span></div>
+                <div class="column">type <span class="datatype">enum</span></div>
+                <div class="column">target_table <span class="datatype">varchar</span></div>
+                <div class="column">target_id <span class="datatype">bigint</span></div>
+                <div class="column">course_directory_id <span class="datatype">bigint</span></div>
+                <div class="column">question_set_id <span class="datatype">bigint</span></div>
+            </div>
+        </div>
+
+        <div class="table-card" id="question_tbl" style="top: 550px; left: 550px;">
+            <div class="table-header header-blue">question_tbl</div>
+            <div class="table-body">
+                <div class="column">id <span class="datatype">bigint</span></div>
+                <div class="column">answer <span class="datatype">bigint</span></div>
+                <div class="column">is_public <span class="datatype">boolean</span></div>
+                <div class="column">stream_content_id <span class="datatype">bigint</span></div>
+            </div>
+        </div>
+
+        <div class="table-card" id="question_trans" style="top: 350px; left: 100px;">
+            <div class="table-header header-green">question_trans</div>
+            <div class="table-body">
+                <div class="column">id <span class="datatype">bigint</span></div>
+                <div class="column">question_id <span class="datatype">bigint</span></div>
+                <div class="column">description <span class="datatype">varchar</span></div>
+                <div class="column">A <span class="datatype">varchar</span></div>
+                <div class="column">B <span class="datatype">varchar</span></div>
+                <div class="column">C <span class="datatype">varchar</span></div>
+                <div class="column">D <span class="datatype">varchar</span></div>
+                <div class="column">locale <span class="datatype">varchar</span></div>
+                <div class="column">answer_details <span class="datatype">varchar</span></div>
+            </div>
+        </div>
+
+        <div class="table-card" id="question_set_to_questions" style="top: 600px; left: 150px;">
+            <div class="table-header header-green">question_set_to_qu...</div>
+            <div class="table-body">
+                <div class="column">id <span class="datatype">bigint</span></div>
+                <div class="column">question_set_id <span class="datatype">bigint</span></div>
+                <div class="column">question_table_id <span class="datatype">bigint</span></div>
+            </div>
+        </div>
+
+        <div class="table-card" id="ppt_table_bottom" style="top: 800px; left: 400px;">
+            <div class="table-header header-purple">ppt_table</div>
+            <div class="table-body">
+                <div class="column">id <span class="datatype">bigint</span></div>
+                <div class="column">en_path <span class="datatype">bigint</span></div>
+                <div class="column">hi_path <span class="datatype">bigint</span></div>
+                <div class="column">universal_path <span class="datatype">bigint</span></div>
+                <div class="column">is_public <span class="datatype">boolean</span></div>
+                <div class="column">is_converted <span class="datatype">boolean</span></div>
+                <div class="column">stream_content_id <span class="datatype">bigint</span></div>
+            </div>
+        </div>
+
+        <div class="table-card" id="pdf_table" style="top: 800px; left: 700px;">
+            <div class="table-header header-blue">pdf_table</div>
+            <div class="table-body">
+                <div class="column">id <span class="datatype">bigint</span></div>
+                <div class="column">en_path <span class="datatype">bigint</span></div>
+                <div class="column">hi_path <span class="datatype">bigint</span></div>
+                <div class="column">universal_path <span class="datatype">bigint</span></div>
+                <div class="column">is_public <span class="datatype">boolean</span></div>
+                <div class="column">stream_content_id <span class="datatype">bigint</span></div>
+            </div>
+        </div>
+
+        <div class="table-card" id="question_set" style="top: 550px; left: 950px;">
+            <div class="table-header header-green">question_set</div>
+            <div class="table-body">
+                <div class="column">id <span class="datatype">bigint</span></div>
+                <div class="column">New column <span class="datatype">bigint</span></div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        // JavaScript will go here
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,219 @@
+.ed-hs-slide-item {
+	z-index: 1;
+	mask-size: cover;
+	padding-top: 240px;
+	padding-bottom: 165px;
+	background-color: #525fe1;
+	clip-path: polygon( 18.521% 99.422%,0% 99.422%,0% 0%,100% 0%,100% 99.422%,35.135% 99.531%,35.135% 99.531%,34.447% 99.65%,33.638% 99.764%,32.74% 99.86%,31.783% 99.928%,30.8% 99.958%,29.821% 99.937%,28.878% 99.855%,28.002% 99.701%,27.224% 99.464%,26.577% 99.134%,26.577% 99.134%,25.877% 98.712%,25.209% 98.395%,24.577% 98.173%,23.982% 98.038%,23.427% 97.983%,22.914% 97.998%,22.445% 98.074%,22.023% 98.205%,21.651% 98.38%,21.33% 98.592%,21.33% 98.592%,21.077% 98.762%,20.795% 98.909%,20.493% 99.034%,20.178% 99.139%,19.86% 99.226%,19.548% 99.294%,19.249% 99.347%,18.972% 99.385%,18.727% 99.41%,18.521% 99.422% );
+	@media #{$xxs} {
+		padding-top: 180px;
+		padding-bottom: 80px;
+	}
+	.container {
+		max-width: 1490px;
+	}
+	.slide-bg {
+		top: 0;
+		left: 0;
+		z-index: -1;
+		width: 100%;
+		height: 100%;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+	.ed-hs-img-wrap {
+		gap: 18px;
+		@media #{$md,$sm,$xs} {
+			align-items: center;
+		}
+		@media #{$xxs} {
+			gap: 5px;
+		}
+		.item-img-1,
+		.item-img-3 {
+			opacity: 0;
+			width: 509px;
+			height: 729px;
+			overflow: hidden;
+			visibility: hidden;
+			border-radius: 300px;
+			transform: translateY(-120px);
+			transition: all 800ms ease-in-out;
+			filter: blur(50px);
+			transition-delay: 500ms;
+			@media #{$lg,$md,$sm} {
+				height: 600px;
+			}
+			@media #{$xs} {
+				height: 400px;
+			}
+			@media #{$xxs} {
+				height: 200px;
+			}
+			.inner-img {
+				width: 100%;
+				height: 100%;
+				img {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+				}
+			}
+		}
+		.item-img-1 {
+			margin-top: 70px;
+			@media #{$md,$sm,$xs} {
+				margin-top: 0;
+			}
+		}
+		.item-img-2 {
+			opacity: 0;
+			width: 402px;
+			height: 550px;
+			overflow: hidden;
+			border-radius: 300px;
+			visibility: hidden;
+			transform: translateY(120px);
+			transition: all 800ms ease-in-out;
+			@media #{$lg,$md,$sm} {
+				height: 450px;
+			}
+			@media #{$xs} {
+				height: 400px;
+			}
+			@media #{$xxs} {
+				height: 200px;
+			}
+			.inner-img {
+				width: 100%;
+				height: 100%;
+				img,video {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+				}
+			}
+		}
+		.item-img-3 {
+			margin-top: 95px;
+			@media #{$md,$sm,$xs} {
+				margin-top: 0;
+			}
+		}
+	}
+	.ed-hs-text-wrap {
+		left: 0;
+		right: 0;
+		bottom: 75px;
+		position: absolute;
+		@media #{$md,$sm,$xs} {
+			position: static;
+			margin-top: 40px;
+		}
+		.hs-slug {
+			color: #fff;
+			line-height: 1;
+			font-size: 42px;
+			display: inline-block;
+			transform-origin: left;
+			font-family: var(--ed-cursive-font);
+			transition: all 800ms ease-in-out;
+			transform: translateX(20px) scaleX(0);
+		}
+		.slider_title {
+			color: #fff;
+			font-size: 90px;
+			font-weight: 700;
+			overflow: hidden;
+			padding-bottom: 16px;
+			.split-word {
+				transform: translateY(100%) scaleY(0);
+				transition: all 500ms ease-in-out;
+				&:nth-child(2) {
+					transition-delay: 300ms;
+				}
+				&:nth-child(3) {
+					transition-delay: 350ms;
+				}
+				&:nth-child(4) {
+					transition-delay: 400ms;
+				}
+			}
+			@media #{$md,$sm} {
+				font-size: 70px;
+			}
+			@media #{$xs} {
+				font-size: 60px;
+			}
+			@media #{$xxs} {
+				font-size: 50px;
+			}
+		}
+		p {
+			color: #fff;
+			margin: 0 auto;
+			overflow: hidden;
+			max-width: 620px;
+			div {
+				overflow: hidden;
+				transform: translateY(100px);
+				transition: all 800ms ease-in-out;
+			}
+		}
+		.ed-btn-2 {
+			transform: scaleY(0);
+			transform-origin: bottom;
+			transition: all 1000ms ease;
+		}
+	}
+}
+.swiper-slide-active {
+	.ed-hs-slide-item {
+		.ed-hs-img-wrap {
+			.item-img-1,
+			.item-img-3 {
+				opacity: 1;
+				visibility: visible;
+				transform: translateY(0px);
+				filter: blur(0px);
+			}
+			.item-img-3 {
+				transition-delay: 300ms;
+			}
+			.item-img-2  {
+				opacity: 1;
+				visibility: visible;
+				transition-delay: 500ms;
+				transform: translateY(0px);
+			}
+		}
+		.ed-hs-text-wrap {
+			.hs-slug {
+				transform: translateX(0) scaleX(1);
+			}
+			.slider_title {
+				.split-word {
+					transform: translateY(0%) scaleY(1);
+				}
+			}
+			p {
+				div {
+					transform: translateY(0px);
+					&:nth-child(1) {
+						transition-delay: 300ms;
+					}
+					&:nth-child(2) {
+						transition-delay: 400ms;
+					}
+				}
+			}
+			.ed-btn-2 {
+				transform: scaleY(1);
+				transition-delay: 300ms;
+			}
+		}
+	}
+}

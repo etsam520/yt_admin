@@ -1,0 +1,223 @@
+  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Question English                    Which software loads first when a computer starts?
+  ----------------------------------- -----------------------------------------------------------------------------------------------------------------------------------------------------------
+  Question Hindi                      कंप्यूटर शुरू होते समय सबसे पहले कौन सा सॉफ़्टवेयर लोड होता है?
+
+  Type                                multiple_choice
+
+  Option English                      Operating System
+
+  Option English                      BIOS
+
+  Option English                      Antivirus
+
+  Option English                      Device Driver
+
+  Option Hindi                        ऑपरेटिंग सिस्टम
+
+  Option Hindi                        बायोस
+
+  Option Hindi                        एंटीवायरस
+
+  Option Hindi                        डिवाइस ड्राइवर
+
+  Correct Answer                      B
+
+  Solution English                    When the computer is powered on, the first software that executes is BIOS (Basic Input Output System). It initializes the hardware and then loads the OS.
+
+  Solution Hindi                      जब computer power on होता है, सबसे पहले BIOS (Basic Input Output System) execute होता है। यह hardware initialize करता है और फिर OS को load करता है।
+
+  Specialization                      ISRO, DRDO, HAL & Other PSU Companies
+  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Question English                    Which type of Fire Extinguisher is most suitable for electrical fires?
+  ----------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Question Hindi                      Fire Extinguisher का कौन सा प्रकार Electrical Fire के लिए सबसे उपयुक्त है?
+
+  Type                                multiple_choice
+
+  Option English                      Water Type
+
+  Option English                      Foam Type
+
+  Option English                      CO₂ Type
+
+  Option English                      Dry Powder
+
+  Option Hindi                        पानी आधारित
+
+  Option Hindi                        फोम आधारित
+
+  Option Hindi                        कार्बन डाइऑक्साइड आधारित
+
+  Option Hindi                        सूखा पाउडर
+
+  Correct Answer                      C
+
+  Solution English                    In an electrical fire, using water or foam is dangerous. A CO₂ extinguisher is the safest because it cuts off the oxygen supply and does not conduct electricity.
+
+  Solution Hindi                      Electrical fire में पानी या फोम का use खतरनाक होता है। CO₂ extinguisher सबसे सुरक्षित होता है क्योंकि यह oxygen supply काट देता है और current conduct नहीं करता।
+
+  Specialization                      ISRO, DRDO, HAL & Other PSU Companies
+  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Question English                    What is the primary function of an Operating System?
+  ----------------------------------- ----------------------------------------------------------------------------------------------------------------------------------
+  Question Hindi                      Operating System का मुख्य कार्य क्या है?
+
+  Type                                multiple_choice
+
+  Option English                      Only to run internet
+
+  Option English                      To manage hardware and software
+
+  Option English                      To store data permanently
+
+  Option English                      To remove viruses
+
+  Option Hindi                        केवल Internet चलाना
+
+  Option Hindi                        Hardware और Software को manage करना
+
+  Option Hindi                        Data को permanent store करना
+
+  Option Hindi                        Virus हटाना
+
+  Correct Answer                      B
+
+  Solution English                    The OS is the resource manager of a computer. It establishes communication between hardware (CPU, memory, devices) and software.
+
+  Solution Hindi                      OS computer का resource manager है। यह hardware (CPU, Memory, Devices) और software के बीच communication establish करता है।
+
+  Specialization                      ISRO, DRDO, HAL & Other PSU Companies
+  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+  ----------------------------------------------------------------------------------------------------------------------------------
+  Question English                    Which command shows the current directory in Linux?
+  ----------------------------------- ----------------------------------------------------------------------------------------------
+  Question Hindi                      Linux में वर्तमान directory देखने का command कौन सा है?
+
+  Type                                multiple_choice
+
+  Option English                      cd
+
+  Option English                      ls
+
+  Option English                      pwd
+
+  Option English                      dir
+
+  Option Hindi                        cd
+
+  Option Hindi                        ls
+
+  Option Hindi                        pwd
+
+  Option Hindi                        dir
+
+  Correct Answer                      C
+
+  Solution English                    In Linux, the pwd (print working directory) command shows the path of the current directory.
+
+  Solution Hindi                      Linux में pwd (print working directory) command current directory path बताता है।
+
+  Specialization                      ISRO, DRDO, HAL & Other PSU Companies
+  ----------------------------------------------------------------------------------------------------------------------------------
+
+  -------------------------------------------------------------------------------------------------------------------------
+  Question English                    Which keys are used together to permanently delete a file in Windows?
+  ----------------------------------- -------------------------------------------------------------------------------------
+  Question Hindi                      Windows में किसी file को permanently delete करने के लिए कौन सी keys एक साथ दबाई जाती हैं?
+
+  Type                                multiple_choice
+
+  Option English                      Ctrl + X
+
+  Option English                      Shift + Delete
+
+  Option English                      Alt + Delete
+
+  Option English                      Ctrl + Alt
+
+  Option Hindi                        Ctrl + X
+
+  Option Hindi                        Shift + Delete
+
+  Option Hindi                        Alt + Delete
+
+  Option Hindi                        Ctrl + Alt
+
+  Correct Answer                      B
+
+  Solution English                    Using Shift + Delete bypasses the Recycle Bin and permanently deletes the file.
+
+  Solution Hindi                      Shift + Delete key से file Recycle Bin bypass करके permanently delete हो जाती है।
+
+  Specialization                      ISRO, DRDO, HAL & Other PSU Companies
+  -------------------------------------------------------------------------------------------------------------------------
+
+  --------------------------------------------------------------------------------------------------------------------------------------------
+  Question English                    What is the correct order of the booting process?
+  ----------------------------------- --------------------------------------------------------------------------------------------------------
+  Question Hindi                      Booting process का सही क्रम कौन सा है?
+
+  Type                                multiple_choice
+
+  Option English                      OS → BIOS → POST → Kernel
+
+  Option English                      BIOS → POST → OS → Kernel
+
+  Option English                      POST → BIOS → OS → Kernel
+
+  Option English                      BIOS → POST → Boot Loader → OS
+
+  Option Hindi                        OS → BIOS → POST → Kernel
+
+  Option Hindi                        BIOS → POST → OS → Kernel
+
+  Option Hindi                        POST → BIOS → OS → Kernel
+
+  Option Hindi                        BIOS → POST → Boot Loader → OS
+
+  Correct Answer                      D
+
+  Solution English                    In booting, BIOS runs first, then POST (Power On Self Test), and finally the Boot Loader loads the OS.
+
+  Solution Hindi                      Booting में पहले BIOS run होता है, फिर POST (Power On Self Test), फिर Boot Loader OS को load करता है।
+
+  Specialization                      ISRO, DRDO, HAL & Other PSU Companies
+  --------------------------------------------------------------------------------------------------------------------------------------------
+
+  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Question English                    Which shortcut quickly opens Task Manager in Windows?
+  ----------------------------------- ------------------------------------------------------------------------------------------------------------------------------------
+  Question Hindi                      Windows में Task Manager को जल्दी खोलने के लिए कौन सा shortcut है?
+
+  Type                                multiple_choice
+
+  Option English                      Ctrl + Alt + Delete
+
+  Option English                      Ctrl + Shift + T
+
+  Option English                      Alt + F4
+
+  Option English                      Win + R
+
+  Option Hindi                        Ctrl + Alt + Delete
+
+  Option Hindi                        Ctrl + Shift + T
+
+  Option Hindi                        Alt + F4
+
+  Option Hindi                        Win + R
+
+  Correct Answer                      A
+
+  Solution English                    Ctrl + Alt + Delete opens options like Task Manager and Lock Screen. For direct Task Manager, Ctrl + Shift + Esc can also be used.
+
+  Solution Hindi                      Ctrl + Alt + Delete से Task Manager, Lock Screen आदि options खुलते हैं। Directly Task Manager के लिए Ctrl + Shift + Esc भी use कर सकते हैं।
+
+  Specialization                      ISRO, DRDO, HAL & Other PSU Companies
+  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------

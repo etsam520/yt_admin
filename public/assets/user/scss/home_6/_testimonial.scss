@@ -1,0 +1,240 @@
+.ed-tst6-sec {
+	overflow: hidden;
+	.ed-tst6-shape {
+		left: 0;
+		bottom: 120px;
+		@media #{$xxxl} {
+			left: -80px;
+		}
+		@media #{$xxl,$xl,$lg,$md,$sm,$xs} {
+			display: none;
+		}
+	}
+}
+.ed-tst6-content {
+	gap: 30px 20px;
+	@media #{$md,$sm,$xs} {
+		flex-wrap: wrap;
+	}
+}
+.ed-tst6-text-wrap {
+	max-width: 432px;
+	@media #{$md,$sm,$xs} {
+		width: 100%;
+		display: flex;
+		gap: 20px 30px;
+		max-width: 100%;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	.ed-sec-title-6 {
+		@media #{$md,$sm,$xs} {
+			max-width: 432px;
+		}
+	}
+	.ed-ab5-client {
+		@media #{$md,$sm,$xs} {
+			margin-top: 0;
+		}
+	}
+	.ed-ab5-client li {
+		width: 56px;
+		height: 56px;
+		span {
+			color: #fff;
+			width: 100%;
+			height: 100%;
+			display: flex;
+			font-size: 24px;
+			line-height: .75;
+			align-items: center;
+			justify-content: center;
+			background-color: var(--ed-prime-c9);
+		}
+	}
+	.ed-ab5-cl-text {
+		margin-top: 15px;
+		h3 {
+			font-size: 32px;
+			font-weight: 600;
+			padding-bottom: 10px;
+			color: var(--ed-tt-color-2);
+		}
+		p {
+			max-width: 165px;
+		}
+	}
+}
+.ed-tst6-slider-wrap {
+	max-width: 870px;
+	@media #{$lg} {
+		max-width: 700px;
+		padding-bottom: 60px;
+	}
+	@media #{$md,$sm,$xs} {
+		max-width: 100%;
+	}
+}
+.ed-tst6-slider {
+	display: flex;
+}
+.ed-tst6-item {
+	.inner-item-wrap {
+		gap: 30px 40px;
+		@media #{$xs} {
+			flex-wrap: wrap;
+		}
+	}
+	.item-img-degi {
+		width: 100%;
+		max-width: 408px;
+		.item-img {
+			width: 364px;
+			height: 364px;
+			overflow: hidden;
+			border-radius: 100%;
+			transform: scale(0);
+			transition: 1000ms cubic-bezier(0.5, -0.1, 0.3, 1.1);
+			@media #{$lg,$md,$sm,$xs} {
+				width: 300px;
+				height: 300px;
+			}
+		}
+		.item-degi {
+			left: 0;
+			z-index: 1;
+			bottom: 0;
+			opacity: 0;
+			width: 164px;
+			height: 164px;
+			position: absolute;
+			border-radius: 100%;
+			transform: translateX(50px);
+			transition: 1000ms cubic-bezier(0.5, -0.75, 0.3, 1.5);
+			&:before,
+			&:after {
+				top: 0;
+				width: 100%;
+				content: '';
+				z-index: -1;
+				height: 100%;
+				border-radius: 100%;
+				position: absolute;
+				background-color: #fff;
+				transition: 1000ms cubic-bezier(0.5, -0.75, 0.3, 1.5);
+			}
+			&:before {
+				right: 30px;
+			}
+			&:after {
+				background-color: #F4BF00;;
+			}
+			h3 {
+				font-size: 22px;
+				font-weight: 600;
+				padding-bottom: 3px;
+			}
+			span {
+				font-size: 14px;
+			}
+		}
+	}
+	.item-text {
+		max-width: 420px;
+		padding-top: 35px;
+		@media #{$md,$sm,$xs} {
+			padding-top: 0;
+			max-width: 100%;
+		}
+		ul {
+			opacity: 0;
+			transform: translateX(50px);
+			transition: 1000ms cubic-bezier(0.5, -0.75, 0.3, 1.5);
+		}
+		li {
+			color: #FFAE00;
+			font-size: 18px;
+		}
+		p {
+			opacity: 0;
+			font-size: 22px;
+			line-height: 1.64;
+			padding-top: 15px;
+			transform: translateX(50px);
+			transition: 1000ms cubic-bezier(0.5, -0.75, 0.3, 1.5);
+		}
+	}
+}
+.ed-tst6-nav {
+	right: 25%;
+	z-index: 2;
+	width: 100%;
+	bottom: 55px;
+	max-width: 215px;
+	position: absolute;
+	@media #{$lg,$md,$sm,$xs} {
+		margin: 0 auto;
+		position: static;
+		margin-top: 40px;
+	}
+	.ed-tst6-next,
+	.ed-tst6-prev {
+		width: 56px;
+		height: 56px;
+		color: #050505;
+		cursor: pointer;
+		border-radius: 100%;
+		background-color: #F5EFE7;
+		transition: all 500ms ease-in-out;
+		&:hover {
+			color: #fff;
+			background-color: var(--ed-prime-c9);
+		}
+	}
+}
+.ed-tst6-pagi {
+	max-width: 70px;
+	text-align: center;
+	.swiper-pagination-bullet {
+		width: 6px;
+		opacity: 1;
+		height: 6px;
+		border-radius: 100%;
+		transition: all 500ms ease-in-out;
+		background-color: rgba(5, 5, 5, .24);
+		&.swiper-pagination-bullet-active {
+			background-color: var(--ed-prime-c9);
+		}
+	}
+}
+.swiper-slide-active {
+	.ed-tst6-item {
+		.item-img-degi {
+			.item-degi {
+				opacity: 1;
+				transform: translateX(0px) scale(1.0);
+				transition-delay: 600ms;
+				&:before {
+					right: -8px;
+					transition-delay: 800ms;
+				}
+			}
+		}
+		.item-img {
+			transform: scale(1);
+			transition-delay: 200ms;
+		}
+		.item-text {
+			ul {
+				opacity: 1;
+				transition-delay: 800ms;
+				transform: translateX(0px);
+			}
+			p {
+				opacity: 1;
+				transition-delay: 1000ms;
+				transform: translateX(0px);
+			}
+		}
+	}
+}

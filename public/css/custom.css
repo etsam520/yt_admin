@@ -1,0 +1,47 @@
+/* Align header content */
+.admin-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Ensure user dropdown stays on the right */
+.dropdown {
+    position: relative;
+}
+
+/* Hide dropdown initially */
+#userDropdownMenu {
+    display: none; /* Initially hidden */
+    position: absolute;
+    right: 0; /* Align to the right */
+    top: 100%; /* Position below the toggle */
+    background: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    min-width: 150px;
+    z-index: 1000;
+}
+
+/* Show dropdown when active */
+#userDropdownMenu.show {
+    display: block; /* Show when active */
+}
+
+/* Cursor pointer for user icon */
+/* Ensure user icon and text are aligned */
+.user-icon {
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+/* Optional: Adjust the spacing between the image and text */
+#userDropdownToggle {
+    display: flex;
+    align-items: center; /* Center align items vertically */
+}
+
+/* Optional: Add hover effect for dropdown toggle */
+#userDropdownToggle:hover {
+    text-decoration: underline; /* Underline on hover */
+}
